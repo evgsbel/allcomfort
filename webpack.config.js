@@ -60,7 +60,7 @@ module.exports = {
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
         loader: "file-loader",
         options: {
-          name: "${PATHS.assets}[name].[ext]"
+          name: "../fonts/[name].[ext]"
         }
       },
       {
@@ -68,7 +68,7 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/,
         loader: "file-loader",
         options: {
-          name: "[name].[ext]"
+          name: "../img/[name].[ext]"
         }
       },
       {

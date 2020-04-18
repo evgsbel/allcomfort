@@ -1,3 +1,8 @@
+@import 'utils/libs.sass'
+@import 'utils/font.sass'
+@import 'utils/media.sass'
+
+
 $regular: 'gt_eesti_pro_displayregular'
 $bold: 'gt_eesti_pro_displaybold'
 $light: 'gt_eesti_pro_displaylight'
@@ -550,6 +555,9 @@ p
   &__price
     font-family: $bold
     font-size: 35px
+  &__gallery
+    img:not(:last-child)
+      margin-right: 10px
   &__list-title
     font-size: 20px
     font-family: $bold
@@ -581,7 +589,7 @@ p
   background-color: #fff
   padding-bottom: 70px
   &__wrapper
-    background-image: url('/assets/img/subscribe-bg.png')
+    background-image: url('../img/subscribe-bg.png')
     background-color: #2A2A2A
     background-repeat: no-repeat
     position: relative
