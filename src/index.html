@@ -1,0 +1,872 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>AllComfort</title>
+</head>
+<body>
+<div class="hide-svg">
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="fb" width="9" height="20" viewBox="0 0 9 20">
+            <path d="M8.9 0C2.5 0 2 0.6 2 6.3H0V9.6H2V19.2H5.9V9.6H8.5L8.9 6.3H6C6 6.3 6 5.5 6 4.6C6 3.7 6.3 3.3 7.5 3.3C8.7 3.3 9 3.3 9 3.3L8.9 0Z"/>
+        </symbol>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="tw" width="21" height="17" viewBox="0 0 21 17">
+            <path d="M6.5 17C14.4 17 18.7 10.5 18.7 4.79999C18.7 4.59999 18.7 4.4 18.7 4.2C19.5 3.6 20.3 2.8 20.8 2C20 2.3 19.2 2.6 18.3 2.7C19.2 2.2 19.9 1.29999 20.2 0.299988C19.4 0.799988 18.5 1.09999 17.5 1.29999C16.7 0.499988 15.6 0 14.4 0C12 0 10.1 1.89999 10.1 4.29999C10.1 4.59999 10.1 4.99999 10.2 5.29999C6.6 5.09999 3.5 3.39999 1.4 0.799988C1 1.39999 0.800003 2.19999 0.800003 2.89999C0.800003 4.39999 1.6 5.7 2.7 6.5C2 6.5 1.3 6.3 0.800003 6C0.800003 6 0.800003 5.99999 0.800003 6.09999C0.800003 8.19999 2.3 9.89999 4.2 10.3C3.8 10.4 3.5 10.5 3.1 10.5C2.8 10.5 2.6 10.5 2.3 10.4C2.8 12.1 4.4 13.3 6.3 13.4C4.8 14.5 3 15.2 1 15.2C0.7 15.2 0.3 15.2 0 15.1C1.8 16.3 4.1 17 6.5 17Z"/>
+        </symbol>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="vk" width="20" height="12" viewBox="0 0 20 12">
+            <path d="M18.7 0.899998C18.9 0.399998 18.7 0.0999985 18.1 0.0999985H16C15.5 0.0999985 15.2 0.400001 15.1 0.700001C15.1 0.700001 14 3.3 12.5 5C12 5.5 11.8 5.6 11.5 5.6C11.3 5.6 11.2 5.4 11.2 5V0.799999C11.2 0.299999 11 0 10.6 0H7.3C7 0 6.8 0.2 6.8 0.5C6.8 1 7.6 1.1 7.6 2.6V5.8C7.6 6.5 7.4 6.6 7.2 6.6C6.5 6.6 4.7 4 3.7 1C3.5 0.4 3.3 0.200001 2.8 0.200001H0.700005C0.100005 0.200001 0 0.499999 0 0.799999C0 1.3 0.700003 4.1 3.3 7.8C5.1 10.3 7.5 11.7 9.7 11.7C11 11.7 11.2 11.4 11.2 10.9V8.8C11.2 8.2 11.4 8.1 11.7 8.1C12 8.1 12.5 8.3 13.8 9.5C15.3 11 15.5 11.6 16.3 11.6H18.4C19 11.6 19.3 11.3 19.1 10.7C18.9 10.1 18.3 9.2 17.3 8.2C16.8 7.6 16.1 7 15.8 6.7C15.5 6.3 15.6 6.1 15.8 5.8C15.8 5.8 18.5 2.1 18.7 0.899998Z"/>
+        </symbol>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="ok" width="12" height="21" viewBox="0 0 12 21">
+            <path d="M5.7 0.699951C2.9 0.699951 0.599998 2.99995 0.599998 5.79995C0.599998 8.59995 2.9 10.9 5.7 10.9C8.5 10.9 10.8 8.59995 10.8 5.79995C10.8 2.99995 8.5 0.699951 5.7 0.699951ZM5.7 7.89995C4.6 7.89995 3.6 6.99995 3.6 5.79995C3.6 4.69995 4.5 3.69995 5.7 3.69995C6.9 3.69995 7.8 4.59995 7.8 5.79995C7.8 6.99995 6.9 7.89995 5.7 7.89995ZM7.8 15.1C9.6 14.7 10.7 13.9 10.9 13.8C11.3 13.5 11.5 13.1 11.5 12.6C11.5 11.8 10.8 11.1 10 11.1C9.7 11.1 9.4 11.2 9.1 11.4C9.1 11.4 7.7 12.3 5.8 12.3C3.9 12.3 2.4 11.3 2.3 11.3C2.1 11.1 1.8 11.1 1.5 11.1C0.7 11.1 0 11.8 0 12.6C0 13.1 0.199997 13.6 0.699997 13.8C0.799997 13.9 1.9 14.6 3.7 15L0.899994 17.9C0.299994 18.5 0.399994 19.4 0.899994 20C1.19999 20.2999 1.6 20.5 2 20.5C2.4 20.5 2.8 20.2999 3.1 20L5.89999 17.2L8.7 20C9.3 20.6 10.2 20.6 10.8 20C11.4 19.4 11.4 18.5 10.8 17.9L7.8 15.1Z"/>
+        </symbol>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="yt" width="22" height="16" viewBox="0 0 22 16">
+            <path d="M21 2.4C20.8 1.5 20 0.8 19.1 0.5C17.4 0 10.7 0 10.7 0C10.7 0 4 0 2.3 0.5C1.4 0.7 0.700001 1.5 0.400001 2.4C5.66244e-07 4.1 0 7.5 0 7.5C0 7.5 0 11 0.5 12.7C0.7 13.6 1.5 14.3 2.4 14.6C4.1 15.1 10.8 15.1 10.8 15.1C10.8 15.1 17.5 15.1 19.2 14.6C20.1 14.4 20.8 13.6 21.1 12.7C21.6 11 21.6 7.5 21.6 7.5C21.6 7.5 21.5 4.1 21 2.4ZM8.7 10.8V4.4L14.2 7.6L8.7 10.8Z"/>
+        </symbol>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="in" width="21" height="21" viewBox="0 0 21 21">
+            <path d="M18.7 14.8C18.7 17 16.9 18.8 14.8 18.8H5.9C3.7 18.8 2 17 2 14.8V5.9C2 3.7 3.8 1.9 5.9 1.9H14.8C17 1.9 18.7 3.7 18.7 5.9V14.8ZM14.6 0H5.9C2.6 0 0 2.7 0 6V14.7C0 18 2.7 20.7 5.9 20.7H12.7H14.6C17.9 20.7 20.5 18 20.5 14.7V6C20.6 2.7 17.9 0 14.6 0ZM10.3 13.8C8.4 13.8 6.8 12.2 6.8 10.3C6.8 8.4 8.3 6.8 10.3 6.8C12.3 6.8 13.8 8.4 13.8 10.3C13.8 12.3 12.2 13.8 10.3 13.8ZM10.3 5C7.4 5 5 7.4 5 10.4C5 13.4 7.4 15.8 10.3 15.8C13.2 15.8 15.6 13.4 15.6 10.4C15.6 7.4 13.2 5 10.3 5ZM15.8 3.5C15.1 3.5 14.6 4.1 14.6 4.7C14.6 5.3 15.2 5.9 15.8 5.9C16.5 5.9 17 5.3 17 4.7C17 4.1 16.5 3.5 15.8 3.5Z"/>
+        </symbol>
+    </svg>
+
+
+</div>
+<section class="top-bar">
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-xl-6 top-bar__nav top-nav">
+                <ul class="top-nav__wrapper d-flex justify-content-start">
+                    <li class="top-nav__item"><a href="adasd" class="top-nav__link">адрес магазинов </a></li>
+                    <li class="top-nav__item"><a href="" class="top-nav__link">доставка</a></li>
+                    <li class="top-nav__item"><a href="" class="top-nav__link">статус заказа </a></li>
+                    <li class="top-nav__item"><a href="" class="top-nav__link">кредит и рассрочка</a></li>
+                </ul>
+            </div>
+            <div class="col-xl-6 top-bar__contacts top-contacts d-flex justify-content-end align-items-center">
+                <div class="top-contacts__time">Прием звакнков с 9:00 до 18:00 без выходных</div>
+                <div class="top-contacts__slash"></div>
+                <a href="tel:88002346433" class="top-contacts__phone">8 800 234 64 33</a>
+            </div>
+        </div>
+    </div>
+</section>
+<header class="header">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center justify-content-between">
+            <a href="/" class="header__logo logo d-flex align-items-center">
+                <div class="logo__img">
+                    <img src="./assets/img/logo.png" alt="">
+                </div>
+                <div class="logo__slash"></div>
+                <div class="logo__title">
+                    Интернет-магазин <br>
+                    климатической техники
+                </div>
+            </a>
+            <div class="header__search search">
+                <form action="" class="search__form form">
+                    <input type="search" class="search__input form__input"
+                           placeholder="Наименования продукции или артикул если он у вас есть">
+                    <input type="submit" class="search__submit" value="">
+                </form>
+            </div>
+            <div class="header__btns header-btns d-flex justify-content-between">
+                <button class="header-btns__btn header-btns_login button button_service button_login">
+                    Войти
+                </button>
+                <button class="header-btns__btn button button button_service button_filter">
+                    <span class="top-counters">115</span>
+                </button>
+                <button class="header-btns__btn button button_service button_like">
+                    <span class="top-counters">1 215</span>
+                </button>
+                <button class="header-btns__btn header-btns_cart button button_service button_cart">
+                    <span class="top-counters">2</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<nav class="nav">
+    <div class="container">
+        <ul class="row nav__wrapper justify-content-between">
+            <li class="nav__item"><a href="" class="nav__link nav__link_yellow">Акции</a></li>
+            <li class="nav__item"><a href="" class="nav__link nav__link_active">Кондиционеры</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Ветниляция</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Котлы и колонки</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Все для отопления</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Система очистки воды</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Техника для здоровья</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Обогреватели</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Хиты продаж</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Распрадажа</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Установка и сервис</a></li>
+            <li class="nav__item"><a href="" class="nav__link nav__link_yellow">ALClub</a></li>
+        </ul>
+    </div>
+</nav>
+<section class="banner">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-xl-8 banner__left banner-slider js-banner-slider owl-carousel owl-theme">
+                <!--Item-->
+                <div class="banner-slider__wrapper" style="background-image: url('./assets/img/bannerLeftBg.jpg')">
+                    <div class="banner-slider__item">
+                        <div class="banner-slider__title">Компактная вентиляция</div>
+                        <div class="banner-slider__subtitle">установка наш конек</div>
+                        <div class="banner-slider__price">до 4 000 ₽</div>
+                        <button class="button button_black button_strwhite">Подробнее</button>
+                    </div>
+                </div>
+                <!--Item END-->
+                <!--Item-->
+                <div class="banner-slider__wrapper" style="background-image: url('./assets/img/bannerLeftBg.jpg')">
+                    <div class="banner-slider__item">
+                        <div class="banner-slider__title">Компактная вентиляция</div>
+                        <div class="banner-slider__subtitle">установка наш конек</div>
+                        <div class="banner-slider__price">до 4 000 ₽</div>
+                        <button class="button button_black button_strwhite">Подробнее</button>
+                    </div>
+                </div>
+                <!--Item END-->
+                <!--Item-->
+                <div class="banner-slider__wrapper" style="background-image: url('./assets/img/bannerLeftBg.jpg')">
+                    <div class="banner-slider__item">
+                        <div class="banner-slider__title">Компактная вентиляция</div>
+                        <div class="banner-slider__subtitle">установка наш конек</div>
+                        <div class="banner-slider__price">до 4 000 ₽</div>
+                        <button class="button button_black button_strwhite">Подробнее</button>
+                    </div>
+                </div>
+                <!--Item END-->
+                <!--Item-->
+                <div class="banner-slider__wrapper" style="background-image: url('./assets/img/bannerLeftBg.jpg')">
+                    <div class="banner-slider__item">
+                        <div class="banner-slider__title">Компактная вентиляция</div>
+                        <div class="banner-slider__subtitle">установка наш конек</div>
+                        <div class="banner-slider__price">до 4 000 ₽</div>
+                        <button class="button button_black button_strwhite">Подробнее</button>
+                    </div>
+                </div>
+                <!--Item END--> <!--Item-->
+                <div class="banner-slider__wrapper" style="background-image: url('./assets/img/bannerLeftBg.jpg')">
+                    <div class="banner-slider__item">
+                        <div class="banner-slider__title">Компактная вентиляция</div>
+                        <div class="banner-slider__subtitle">установка наш конек</div>
+                        <div class="banner-slider__price">до 4 000 ₽</div>
+                        <button class="button button_black button_strwhite">Подробнее</button>
+                    </div>
+                </div>
+                <!--Item END-->
+                <!--Item-->
+                <div class="banner-slider__wrapper" style="background-image: url('./assets/img/bannerLeftBg.jpg')">
+                    <div class="banner-slider__item">
+                        <div class="banner-slider__title">Компактная вентиляция</div>
+                        <div class="banner-slider__subtitle">установка наш конек</div>
+                        <div class="banner-slider__price">до 4 000 ₽</div>
+                        <button class="button button_black button_strwhite">Подробнее</button>
+                    </div>
+                </div>
+                <!--Item END-->
+                <!--Item-->
+                <div class="banner-slider__wrapper" style="background-image: url('./assets/img/bannerLeftBg.jpg')">
+                    <div class="banner-slider__item">
+                        <div class="banner-slider__title">Компактная вентиляция</div>
+                        <div class="banner-slider__subtitle">установка наш конек</div>
+                        <div class="banner-slider__price">до 4 000 ₽</div>
+                        <button class="button button_black button_strwhite">Подробнее</button>
+                    </div>
+                </div>
+                <!--Item END-->
+            </div>
+            <div class="col-xl-4 banner__right stock-banner"
+                 style="background-image: url('./assets/img/bannerRightBg.png');">
+                <div class="stock-banner__title">
+                    При покупке <br>
+                    <span>системы <br>вентиляции</span>
+                </div>
+                <div class="stock-banner__title">установка <br>в подарок</div>
+                <button class="button button_black button_strwhite stock-banner__btn">Подробнее</button>
+            </div>
+        </div>
+    </div>
+</section>
+<main class="main" id="main">
+    <div class="container">
+        <div class="row">
+            <section class="col-xl-4 news main-news">
+                <div class="caption">
+                    <div class="caption__title">Новости</div>
+                    <div class="caption__line"></div>
+                    <a href="" class="caption__link">Все новости</a>
+                </div>
+                <div class="js-news-slider owl-carousel owl-theme">
+                    <!--Item-->
+                    <div class="news__item" style="background-image: url('./assets/img/news-bg.jpg')"
+                         data-dot="<a href='#news1'>1</a>" data-hash="news1">
+                        <div class="news__info">
+                            <div class="news__date">13.04.2020</div>
+                            <div class="news__title">Кондиционеры в Древнем Риме тоже умели делать</div>
+                            <div class="news__description">Одним из величайших технологических достижений последних
+                                десятилетий является...
+                            </div>
+                            <button class="button button_white button_strwhite">Подробнее</button>
+                        </div>
+                    </div>
+                    <!--Item END-->
+                    <!--Item-->
+                    <div class="news__item" style="background-image: url('./assets/img/news-bg.jpg')"
+                         data-dot="<a href='#news2'>2</a>" data-hash="news2">
+                        <div class="news__info">
+                            <div class="news__date">13.04.2020</div>
+                            <div class="news__title">Кондиционеры в Древнем Риме тоже умели делать</div>
+                            <div class="news__description">Одним из величайших технологических достижений последних
+                                десятилетий является...
+                            </div>
+                            <button class="button button_white button_strwhite">Подробнее</button>
+                        </div>
+                    </div>
+                    <!--Item END-->
+                    <!--Item-->
+                    <div class="news__item" style="background-image: url('./assets/img/news-bg.jpg')"
+                         data-dot="<a href='#news3'>3</a>" data-hash="news3">
+                        <div class="news__info">
+                            <div class="news__date">13.04.2020</div>
+                            <div class="news__title">Кондиционеры в Древнем Риме тоже умели делать</div>
+                            <div class="news__description">Одним из величайших технологических достижений последних
+                                десятилетий является...
+                            </div>
+                            <button class="button button_white button_strwhite">Подробнее</button>
+                        </div>
+                    </div>
+                    <!--Item END-->
+                    <!--Item-->
+                    <div class="news__item" style="background-image: url('./assets/img/news-bg.jpg')"
+                         data-dot="<a href='#news4'>4</a>" data-hash="news4">
+                        <div class="news__info">
+                            <div class="news__date">13.04.2020</div>
+                            <div class="news__title">Кондиционеры в Древнем Риме тоже умели делать</div>
+                            <div class="news__description">Одним из величайших технологических достижений последних
+                                десятилетий является...
+                            </div>
+                            <button class="button button_white button_strwhite">Подробнее</button>
+                        </div>
+                    </div>
+                    <!--Item END-->
+                </div>
+            </section>
+            <section class="col-xl-8  recommended main-recommended">
+                <div class="caption">
+                    <div class="caption__title">Рекомендуемые товары</div>
+                    <div class="caption__line"></div>
+                    <a href="" class="caption__link">Все товары</a>
+                </div>
+                <div class="product__list js-product-slider owl-carousel owl-theme">
+                    <!--Item-->
+                    <div class="product" data-dot="<a href='#item1'>1</a>" data-hash="item1">
+                        <div class="product__img"><img src="./assets/img/product-01.png" alt=""></div>
+                        <div class="product__title">Очиститель воздуха
+                            Tion Бризер 3S
+                            Standart
+                        </div>
+                        <div class="product__description">
+                            компактная приточная вентиляция...
+                        </div>
+                        <div class="product__price">
+                            <div class="product__price_old">50 000</div>
+                            <div class="product__price_new">42 376 ₽</div>
+                        </div>
+                        <div class="product__btns">
+                            <button class="button button_buy">Купить</button>
+                            <button class="button button button_service button_filter"></button>
+                        </div>
+                        <div class="product__like "></div>
+                    </div>
+                    <!--Item End-->
+                    <!--Item-->
+                    <div class="product" data-dot="<a href='#item2'>2</a>" data-hash="item2">
+                        <div class="product__img"><img src="./assets/img/product-01.png" alt=""></div>
+                        <div class="product__title">Очиститель воздуха
+                            Tion Бризер 3S
+                            Standart
+                        </div>
+                        <div class="product__description">
+                            компактная приточная вентиляция...
+                        </div>
+                        <div class="product__price">
+                            <!-- <div class="product__price_old">50 000</div>-->
+                            <div class="product__price_new">42 376 ₽</div>
+                        </div>
+                        <div class="product__btns">
+                            <button class="button button_buy">Купить</button>
+                            <button class="button button button_service button_filter"></button>
+                        </div>
+                        <div class="product__like "></div>
+                    </div>
+                    <!--Item End-->
+                    <!--Item-->
+                    <div class="product" data-dot="<a href='#item3'>3</a>" data-hash="item3">
+                        <div class="product__img"><img src="./assets/img/product-01.png" alt=""></div>
+                        <div class="product__title">Очиститель воздуха
+                            Tion Бризер 3S
+                            Standart
+                        </div>
+                        <div class="product__description">
+                            компактная приточная вентиляция...
+                        </div>
+                        <div class="product__price">
+                            <div class="product__price_old">50 000</div>
+                            <div class="product__price_new">42 376 ₽</div>
+                        </div>
+                        <div class="product__btns">
+                            <button class="button button_buy">Купить</button>
+                            <button class="button button button_service button_filter"></button>
+                        </div>
+                        <div class="product__like product__like_active"></div>
+                    </div>
+                    <!--Item End-->
+                    <!--Item-->
+                    <div class="product" data-dot="<a href='#item4'>4</a>" data-hash="item4">
+                        <div class="product__img"><img src="./assets/img/product-01.png" alt=""></div>
+                        <div class="product__title">Очиститель воздуха
+                            Tion Бризер 3S
+                            Standart
+                        </div>
+                        <div class="product__description">
+                            компактная приточная вентиляция...
+                        </div>
+                        <div class="product__price">
+                            <!-- <div class="product__price_old">50 000</div>-->
+                            <div class="product__price_new">42 376 ₽</div>
+                        </div>
+                        <div class="product__btns">
+                            <button class="button button_buy">Купить</button>
+                            <button class="button button button_service button_filter"></button>
+                        </div>
+                        <div class="product__like "></div>
+                    </div>
+                    <!--Item End-->
+                </div>
+            </section>
+        </div>
+    </div>
+    <section class="reviews">
+        <div class="container">
+            <div class="caption">
+                <div class="caption__title">Отзывы</div>
+                <div class="caption__line"></div>
+                <a href="" class="caption__link">Все отзывы</a>
+            </div>
+            <div class="js-reviews-slider owl-carousel owl-theme">
+                <!--item-->
+                <div class="d-flex" data-dot="<a href='#rev1'>1</a>" data-hash="rev1">
+                    <div class="reviews__img"><img src="./assets/img/rev-01.png" alt=""></div>
+                    <div class="reviews__info">
+                        <div class="reviews__name">
+                            Евгения Шустер
+                            <span class="reviews__post">директор</span>
+                        </div>
+                        <div class="reviews__company">Компания ООО ”Шустер Пустер”</div>
+                        <div class="reviews__text">“ Разнообразный и богатый опыт рамки и место обучения кадров влечет
+                            за собой процесс внедрения и модернизации дальнейших направлений развития. Товарищи! рамки и
+                            место обучения кадров играет важную роль в формировании модели развития. Товарищи!
+                            укрепление и развитие.”
+                        </div>
+                    </div>
+                </div>
+                <!--item END-->
+                <!--item-->
+                <div class="d-flex" data-dot="<a href='#rev2'>2</a>" data-hash="rev2">
+                    <div class="reviews__img"><img src="./assets/img/rev-02.png" alt=""></div>
+                    <div class="reviews__info">
+                        <div class="reviews__name">
+                            Дмитрий Курбашев
+                            <span class="reviews__post">директор</span>
+                        </div>
+                        <div class="reviews__company">Компания ООО ”КурбашБурбаш”</div>
+                        <div class="reviews__text">“ Разнообразный и богатый опыт рамки и место обучения кадров влечет
+                            за собой процесс внедрения и модернизации дальнейших направлений развития. Товарищи! рамки и
+                            место обучения кадров играет важную роль в формировании модели развития. Товарищи!
+                            укрепление и развитие.”
+                        </div>
+                    </div>
+                </div>
+                <!--item END-->
+                <!--item-->
+                <div class="d-flex" data-dot="<a href='#rev3'>3</a>" data-hash="rev3">
+                    <div class="reviews__img"><img src="./assets/img/rev-01.png" alt=""></div>
+                    <div class="reviews__info">
+                        <div class="reviews__name">
+                            Евгения Шустер
+                            <span class="reviews__post">директор</span>
+                        </div>
+                        <div class="reviews__company">Компания ООО ”Шустер Пустер”</div>
+                        <div class="reviews__text">“ Разнообразный и богатый опыт рамки и место обучения кадров влечет
+                            за собой процесс внедрения и модернизации дальнейших направлений развития. Товарищи! рамки и
+                            место обучения кадров играет важную роль в формировании модели развития. Товарищи!
+                            укрепление и развитие.”
+                        </div>
+                    </div>
+                </div>
+                <!--item END-->
+                <!--item-->
+                <div class="d-flex" data-dot="<a href='#rev4'>4</a>" data-hash="rev4">
+                    <div class="reviews__img"><img src="./assets/img/rev-02.png" alt=""></div>
+                    <div class="reviews__info">
+                        <div class="reviews__name">
+                            Дмитрий Курбашев
+                            <span class="reviews__post">директор</span>
+                        </div>
+                        <div class="reviews__company">Компания ООО ”КурбашБурбаш”</div>
+                        <div class="reviews__text">“ Разнообразный и богатый опыт рамки и место обучения кадров влечет
+                            за собой процесс внедрения и модернизации дальнейших направлений развития. Товарищи! рамки и
+                            место обучения кадров играет важную роль в формировании модели развития. Товарищи!
+                            укрепление и развитие.”
+                        </div>
+                    </div>
+                </div>
+                <!--item END-->
+            </div>
+        </div>
+    </section>
+    <section class="works">
+        <div class="container">
+            <div class="caption">
+                <div class="caption__title">Наши работы</div>
+                <div class="caption__line"></div>
+                <a href="" class="caption__link">Все работы</a>
+            </div>
+            <div class="js-works-slider owl-carousel owl-theme">
+                <!--Item-->
+                <div class="d-flex justify-content-between works__item" data-dot="<a href='#wr1'>1</a>" data-hash="wr1">
+                    <div class="works__left" style="background-image: url('./assets/img/work-01.png');">
+                        <div class="works__preview">
+                            <div class="works__title">Пицеерия “&nbsp;Pipironi&nbsp; ”</div>
+                            <div class="works__introtext">Тут будет краткая информация об объекте, и об итоговой
+                                стоимости
+                                данного проекта, Тут будет краткая информация об объекте...
+                            </div>
+                            <div class="works__price-title">
+                                Стоимость всех работ
+                                с оборудованием
+                            </div>
+                            <div class="works__price">1 250 000 ₽</div>
+                        </div>
+                    </div>
+                    <div class="works__right">
+                        <div class="works__gallery d-flex justify-content-between">
+                            <img src="./assets/img/work-02.png" alt="">
+                            <img src="./assets/img/work-03.png" alt="">
+                            <img src="./assets/img/work-04.png" alt="">
+                        </div>
+                        <div class="works__list-title">Выполненые работы:</div>
+                        <ul class="works__list">
+                            <li class="works__list-item">Установка винтиляционной системы - <span>5 точек</span></li>
+                            <li class="works__list-item">Установка кондиционеров - <span>10 точек</span></li>
+                            <li class="works__list-item">Установка компактной винтиляционной системы -
+                                <span>10 точек</span>
+                            </li>
+                        </ul>
+                        <button class="button button_strblack">Подробнее</button>
+                    </div>
+                </div>
+                <!--Item END-->
+                <!--Item-->
+                <div class="d-flex justify-content-between works__item" data-dot="<a href='#wr2'>2</a>" data-hash="wr2">
+                    <div class="works__left" style="background-image: url('./assets/img/work-01.png');">
+                        <div class="works__preview">
+                            <div class="works__title">Пицеерия “&nbsp;Pipironi&nbsp; ”</div>
+                            <div class="works__introtext">Тут будет краткая информация об объекте, и об итоговой
+                                стоимости
+                                данного проекта, Тут будет краткая информация об объекте...
+                            </div>
+                            <div class="works__price-title">
+                                Стоимость всех работ
+                                с оборудованием
+                            </div>
+                            <div class="works__price">1 250 000 ₽</div>
+                        </div>
+                    </div>
+                    <div class="works__right">
+                        <div class="works__gallery d-flex justify-content-between">
+                            <img src="./assets/img/work-02.png" alt="">
+                            <img src="./assets/img/work-03.png" alt="">
+                            <img src="./assets/img/work-04.png" alt="">
+                        </div>
+                        <div class="works__list-title">Выполненые работы:</div>
+                        <ul class="works__list">
+                            <li class="works__list-item">Установка винтиляционной системы - <span>5 точек</span></li>
+                            <li class="works__list-item">Установка кондиционеров - <span>10 точек</span></li>
+                            <li class="works__list-item">Установка компактной винтиляционной системы -
+                                <span>10 точек</span>
+                            </li>
+                        </ul>
+                        <button class="button button_strblack">Подробнее</button>
+                    </div>
+                </div>
+                <!--Item END-->
+                <!--Item-->
+                <div class="d-flex justify-content-between works__item" data-dot="<a href='#wr3'>3</a>" data-hash="wr3">
+                    <div class="works__left" style="background-image: url('./assets/img/work-01.png');">
+                        <div class="works__preview">
+                            <div class="works__title">Пицеерия “&nbsp;Pipironi&nbsp; ”</div>
+                            <div class="works__introtext">Тут будет краткая информация об объекте, и об итоговой
+                                стоимости
+                                данного проекта, Тут будет краткая информация об объекте...
+                            </div>
+                            <div class="works__price-title">
+                                Стоимость всех работ
+                                с оборудованием
+                            </div>
+                            <div class="works__price">1 250 000 ₽</div>
+                        </div>
+                    </div>
+                    <div class="works__right">
+                        <div class="works__gallery d-flex justify-content-between">
+                            <img src="./assets/img/work-02.png" alt="">
+                            <img src="./assets/img/work-03.png" alt="">
+                            <img src="./assets/img/work-04.png" alt="">
+                        </div>
+                        <div class="works__list-title">Выполненые работы:</div>
+                        <ul class="works__list">
+                            <li class="works__list-item">Установка винтиляционной системы - <span>5 точек</span></li>
+                            <li class="works__list-item">Установка кондиционеров - <span>10 точек</span></li>
+                            <li class="works__list-item">Установка компактной винтиляционной системы -
+                                <span>10 точек</span>
+                            </li>
+                        </ul>
+                        <button class="button button_strblack">Подробнее</button>
+                    </div>
+                </div>
+                <!--Item END-->
+                <!--Item-->
+                <div class="d-flex justify-content-between works__item" data-dot="<a href='#wr4'>4</a>" data-hash="wr4">
+                    <div class="works__left" style="background-image: url('./assets/img/work-01.png');">
+                        <div class="works__preview">
+                            <div class="works__title">Пицеерия “&nbsp;Pipironi&nbsp; ”</div>
+                            <div class="works__introtext">Тут будет краткая информация об объекте, и об итоговой
+                                стоимости
+                                данного проекта, Тут будет краткая информация об объекте...
+                            </div>
+                            <div class="works__price-title">
+                                Стоимость всех работ
+                                с оборудованием
+                            </div>
+                            <div class="works__price">1 250 000 ₽</div>
+                        </div>
+                    </div>
+                    <div class="works__right">
+                        <div class="works__gallery d-flex justify-content-between">
+                            <img src="./assets/img/work-02.png" alt="">
+                            <img src="./assets/img/work-03.png" alt="">
+                            <img src="./assets/img/work-04.png" alt="">
+                        </div>
+                        <div class="works__list-title">Выполненые работы:</div>
+                        <ul class="works__list">
+                            <li class="works__list-item">Установка винтиляционной системы - <span>5 точек</span></li>
+                            <li class="works__list-item">Установка кондиционеров - <span>10 точек</span></li>
+                            <li class="works__list-item">Установка компактной винтиляционной системы -
+                                <span>10 точек</span>
+                            </li>
+                        </ul>
+                        <button class="button button_strblack">Подробнее</button>
+                    </div>
+                </div>
+                <!--Item END-->
+                <!--Item-->
+                <div class="d-flex justify-content-between works__item" data-dot="<a href='#wr5'>5</a>" data-hash="wr5">
+                    <div class="works__left" style="background-image: url('./assets/img/work-01.png');">
+                        <div class="works__preview">
+                            <div class="works__title">Пицеерия “&nbsp;Pipironi&nbsp; ”</div>
+                            <div class="works__introtext">Тут будет краткая информация об объекте, и об итоговой
+                                стоимости
+                                данного проекта, Тут будет краткая информация об объекте...
+                            </div>
+                            <div class="works__price-title">
+                                Стоимость всех работ
+                                с оборудованием
+                            </div>
+                            <div class="works__price">1 250 000 ₽</div>
+                        </div>
+                    </div>
+                    <div class="works__right">
+                        <div class="works__gallery d-flex justify-content-between">
+                            <img src="./assets/img/work-02.png" alt="">
+                            <img src="./assets/img/work-03.png" alt="">
+                            <img src="./assets/img/work-04.png" alt="">
+                        </div>
+                        <div class="works__list-title">Выполненые работы:</div>
+                        <ul class="works__list">
+                            <li class="works__list-item">Установка винтиляционной системы - <span>5 точек</span></li>
+                            <li class="works__list-item">Установка кондиционеров - <span>10 точек</span></li>
+                            <li class="works__list-item">Установка компактной винтиляционной системы -
+                                <span>10 точек</span>
+                            </li>
+                        </ul>
+                        <button class="button button_strblack">Подробнее</button>
+                    </div>
+                </div>
+                <!--Item END-->
+                <!--Item-->
+                <div class="d-flex justify-content-between works__item" data-dot="<a href='#wrdot'>...</a>"
+                     data-hash="wrdot">
+                    <div class="works__left" style="background-image: url('./assets/img/work-01.png');">
+                        <div class="works__preview">
+                            <div class="works__title">Пицеерия “&nbsp;Pipironi&nbsp; ”</div>
+                            <div class="works__introtext">Тут будет краткая информация об объекте, и об итоговой
+                                стоимости
+                                данного проекта, Тут будет краткая информация об объекте...
+                            </div>
+                            <div class="works__price-title">
+                                Стоимость всех работ
+                                с оборудованием
+                            </div>
+                            <div class="works__price">1 250 000 ₽</div>
+                        </div>
+                    </div>
+                    <div class="works__right">
+                        <div class="works__gallery d-flex justify-content-between">
+                            <img src="./assets/img/work-02.png" alt="">
+                            <img src="./assets/img/work-03.png" alt="">
+                            <img src="./assets/img/work-04.png" alt="">
+                        </div>
+                        <div class="works__list-title">Выполненые работы:</div>
+                        <ul class="works__list">
+                            <li class="works__list-item">Установка винтиляционной системы - <span>5 точек</span></li>
+                            <li class="works__list-item">Установка кондиционеров - <span>10 точек</span></li>
+                            <li class="works__list-item">Установка компактной винтиляционной системы -
+                                <span>10 точек</span>
+                            </li>
+                        </ul>
+                        <button class="button button_strblack">Подробнее</button>
+                    </div>
+                </div>
+                <!--Item END-->
+                <!--Item-->
+                <div class="d-flex justify-content-between works__item" data-dot="<a href='#wr12'>12</a>"
+                     data-hash="wr12">
+                    <div class="works__left" style="background-image: url('./assets/img/work-01.png');">
+                        <div class="works__preview">
+                            <div class="works__title">Пицеерия “&nbsp;Pipironi&nbsp; ”</div>
+                            <div class="works__introtext">Тут будет краткая информация об объекте, и об итоговой
+                                стоимости
+                                данного проекта, Тут будет краткая информация об объекте...
+                            </div>
+                            <div class="works__price-title">
+                                Стоимость всех работ
+                                с оборудованием
+                            </div>
+                            <div class="works__price">1 250 000 ₽</div>
+                        </div>
+                    </div>
+                    <div class="works__right">
+                        <div class="works__gallery d-flex justify-content-between">
+                            <img src="./assets/img/work-02.png" alt="">
+                            <img src="./assets/img/work-03.png" alt="">
+                            <img src="./assets/img/work-04.png" alt="">
+                        </div>
+                        <div class="works__list-title">Выполненые работы:</div>
+                        <ul class="works__list">
+                            <li class="works__list-item">Установка винтиляционной системы - <span>5 точек</span></li>
+                            <li class="works__list-item">Установка кондиционеров - <span>10 точек</span></li>
+                            <li class="works__list-item">Установка компактной винтиляционной системы -
+                                <span>10 точек</span>
+                            </li>
+                        </ul>
+                        <button class="button button_strblack">Подробнее</button>
+                    </div>
+                </div>
+                <!--Item END-->
+            </div>
+        </div>
+    </section>
+    <section class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="title">Тут будет заголовок про кондиционеры</div>
+                    <p>Идейные соображения высшего порядка, а также рамки и место обучения кадров позволяет выполнять
+                        важные задания по разработке направлений прогрессивного развития. Не следует, однако забывать,
+                        что сложившаяся структура организации позволяет оценить значение модели развития. Задача
+                        организации, в особенности же реализация намеченных плановых заданий влечет за собой процесс
+                        внедрения и модернизации модели развития. Разнообразный и богатый опыт укрепление и развитие
+                        структуры способствует подготовки и реализации системы обучения кадров, соответствует насущным
+                        потребностям. Повседневная практика показывает, что постоянное информационно-пропагандистское
+                        обеспечение нашей деятельности играет важную роль в формировании позиций, занимаемых участниками
+                        в отношении поставленных задач.</p>
+                    <p>Не следует, однако забывать, что сложившаяся структура организации представляет собой интересный
+                        эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Идейные
+                        соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности
+                        представляет собой интересный эксперимент проверки форм развития. Товарищи! постоянное
+                        информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения
+                        и модернизации новых предложений.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="subscribe__wrapper d-flex align-items-center justify-content-center">
+                        <div class="subscribe__title">Получайте самые интересные <br>предложения первыми</div>
+                        <div class="subscribe__line"></div>
+                        <form action="" class="subsribe__form form d-flex">
+                            <input class="form__input subscribe__input" type="email" placeholder="Введите e-mail"
+                                   required>
+                            <button type="submit" class="button button_yellow button_email subscribe__btn">Подписаться
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="footer__wrapper d-flex justify-content-between">
+                    <div class="footer__item">
+                        <div class="footer__title">Компания ALC</div>
+                        <ul class="footer__list">
+                            <li class="footer__list-item"><a href="" class="footer__link">Новости</a></li>
+                            <li class="footer__list-item"><a href="" class="footer__link">Нам не все равно</a></li>
+                            <li class="footer__list-item"><a href="" class="footer__link">О компании</a></li>
+                            <li class="footer__list-item"><a href="" class="footer__link">Инфесторам и акционерам</a>
+                            </li>
+                            <li class="footer__list-item"><a href="" class="footer__link">For Our Investors</a></li>
+                            <li class="footer__list-item"><a href="" class="footer__link">Вакансии</a></li>
+                            <li class="footer__list-item"><a href="" class="footer__link">Тендеры</a></li>
+                            <li class="footer__list-item"><a href="" class="footer__link">Экологические иновации</a>
+                            </li>
+                            <li class="footer__list-item"><a href="" class="footer__link">Политика компании</a></li>
+                            <li class="footer__list-item"><a href="" class="footer__link">Благотворительность</a></li>
+                            <li class="footer__list-item"><a href="" class="footer__link">Аренда торгвых помещений</a>
+                            </li>
+                            <li class="footer__list-item"><a href="" class="footer__link">Для СМИ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__title">Интернет-магазин</div>
+                        <ul class="footer__list">
+                            <li class="footer__list-item"><a href="" class="footer__link">Помощь покупателю</a></li>
+                            <li class="footer__list-item"><a href="" class="footer__link">Словарь терминов</a></li>
+                            <li class="footer__list-item"><a href="" class="footer__link footer__link_yellow">Закажи и
+                                забери!</a></li>
+                            <li class="footer__list-item"><a href="" class="footer__link">Преимущества
+                                интернет-магазина</a></li>
+                            <li class="footer__list-item"><a href="" class="footer__link">Каталок товаров</a></li>
+                            <li class="footer__list-item"><a href="" class="footer__link">Обмен, Возврат и ремонт</a>
+                            </li>
+                            <li class="footer__list-item"><a href="" class="footer__link">Товары партнеров</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__title">С нами выгодно</div>
+                        <ul class="footer__list">
+                            <li class="footer__list-item"><a href="" class="footer__link">Акции</a></li>
+                            <li class="footer__list-item"><a href="" class="footer__link">ALClub</a></li>
+                            <li class="footer__list-item"><a href="" class="footer__link">М.Видео-Бизнес</a></li>
+                            <li class="footer__list-item"><a href="" class="footer__link">Партнерска программа</a></li>
+                            <li class="footer__list-item"><a href="" class="footer__link">Для Поставщиков</a></li>
+                            <li class="footer__list-item"><a href="" class="footer__link">Подарочные карты</a></li>
+                            <li class="footer__list-item"><a href="" class="footer__link">Нашли дешевле? Снизим цену</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__title">С нами удобно</div>
+                        <ul class="footer__list">
+                            <li class="footer__list-item"><a href="" class="footer__link">ALСервис</a></li>
+                            <li class="footer__list-item"><a href="" class="footer__link">Оплата кредита</a></li>
+                            <li class="footer__list-item"><a href="" class="footer__link">Покупка в кредит</a></li>
+                            <li class="footer__list-item"><a href="" class="footer__link">Часта задоваемые вопросы</a>
+                            </li>
+                            <li class="footer__list-item"><a href="" class="footer__link">Вопросы по работе техники</a>
+                            </li>
+                            <li class="footer__list-item"><a href="" class="footer__link">Отзывы о нас</a></li>
+                            <li class="footer__list-item"><a href="" class="footer__link">6 главноых преимуществ ALC</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__item footer-contacts">
+                        <div class="footer__title mb-4">Свяжитесь с нами</div>
+                        <a href="" class="footer__title mb-4">Контакты</a>
+                        <div class="footer__title mb-3">Обратная связь</div>
+                        <a href="" class="footer__link">Оствьте свое обращение и помогите <br>
+                            нам стать лучше</a>
+                        <a href="" class="footer__link mb-2">Центр ответсвенности за клиента:</a>
+                        <a href="tel:84957777775" class="footer__phone">8-495-777-777-5</a>
+                        <div class="footer__social">
+                            <div class="footer__title social__title">ALC в соцсетях</div>
+                            <div class="d-flex social align-items-center justify-content-between">
+                                <a href="" class="social__item d-flex align-items-center justify-content-center">
+                                    <svg width="9" height="20" viewBox="0 0 9 20" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="#fb"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="social__item d-flex align-items-center justify-content-center">
+                                    <svg width="21" height="17" viewBox="0 0 21 17" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="#tw"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="social__item d-flex align-items-center justify-content-center">
+                                    <svg width="20" height="12" viewBox="0 0 20 12" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="#vk"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="social__item d-flex align-items-center justify-content-center">
+                                    <svg width="12" height="21" viewBox="0 0 12 21" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="#ok"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="social__item d-flex align-items-center justify-content-center">
+                                    <svg width="22" height="16" viewBox="0 0 22 16" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="#yt"></use>
+                                    </svg>
+                                </a>
+                                <a href="" class="social__item d-flex align-items-center justify-content-center">
+                                    <svg width="21" height="21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="#in"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="copyright">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <a href="" class="logo copyright__logo"><img src="./assets/img/logo2.png" alt=""></a>
+            <div class="copyright__line copyright__line_big"></div>
+            <div class="copyright__wr">
+                <div class="copyright__year">&copy; "ALC" 2020</div>
+                <div class="d-flex">
+                    <a class="copyright__link">Официальная информация</a>
+                    <div class="copyright__line copyright__line_small"></div>
+                    <a class="copyright__link">Раскрытие информации</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

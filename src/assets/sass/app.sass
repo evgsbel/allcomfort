@@ -1,0 +1,671 @@
+$regular: 'gt_eesti_pro_displayregular'
+$bold: 'gt_eesti_pro_displaybold'
+$light: 'gt_eesti_pro_displaylight'
+$medium: 'gt_eesti_pro_displaymedium'
+$yellow: #fbe901
+$black: #2A2A2A
+$grey: #E5E5E5
+$red: #F44D43
+
+.container
+  width: 1366px
+  max-width: 100%
+  margin: 0 auto
+body
+  font-size: 16px
+  color: #000
+  font-family: $regular, serif
+  background-color: #E5E5E5
+  line-height: 1
+ul
+  list-style: none
+  margin: 0
+  padding: 0
+p
+  margin: 0
+a
+  color: inherit
+  &:hover
+    color: inherit
+button
+  background-color: transparent
+.hide-svg
+   display: none
+// top-bar
+.top-bar
+  background: #fff
+  padding: 17px 0
+  box-sizing: border-box
+  font-size: 14px
+  color: $black
+.top-nav
+  &__item
+    margin-right: 15px
+.top-contacts
+  &__slash
+    border: 1px solid $black
+    height: 19px
+    margin: 0 16px
+    transform: rotate(16deg)
+  &__phone
+    font-family: $bold, serif
+    font-size: 16px
+//forms
+.form
+  &__input
+    max-width: 100%
+    border: 0
+    border-radius: 5px
+    height: 50px
+    padding: 15px 20px
+    box-sizing: border-box
+    &::-webkit-input-placeholder
+      color: $black
+
+// captions
+.caption
+  display: flex
+  align-items: baseline
+  margin-bottom: 40px
+  &__title
+    font-family: $bold
+    font-size: 35px
+  &__line
+    margin: 0 20px
+    border: 1px solid $black
+    transform: rotate(15deg)
+    height: 19px
+  &__link
+    font-family: $light
+    border-bottom: 1px solid $yellow
+    &:hover
+      border-bottom: 0
+      text-decoration: none
+// buttons
+.button
+  display: flex
+  justify-content: center
+  align-items: center
+  box-sizing: border-box
+  -webkit-border-radius: 5px
+  -moz-border-radius: 5px
+  border-radius: 5px
+  font-size: 14px
+  color: $black
+  height: 40px
+  width: 130px
+  border: 1px solid $black
+  transition: .5s all ease-in-out
+  background-repeat: no-repeat
+  &:hover
+    background-color: $yellow
+    border-color: $yellow
+    color: $black
+  &_service
+    width: 40px
+    height: 40px
+    background-position: center
+  &_filter
+    background-image: url("data:image/svg+xml,%3Csvg width='28' height='23' viewBox='0 0 28 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.03712 12.4401C5.65587 12.4401 6.15748 12.9417 6.15748 13.5604V21.403C6.15748 22.0217 5.65587 22.5233 5.03712 22.5233C4.41836 22.5233 3.91675 22.0217 3.91675 21.403V13.5604C3.91675 12.9417 4.41836 12.4401 5.03712 12.4401Z' fill='%232A2A2A'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.03712 0.116074C5.65587 0.116074 6.15748 0.617677 6.15748 1.23644V9.07897C6.15748 9.69773 5.65587 10.1993 5.03712 10.1993C4.41836 10.1993 3.91675 9.69773 3.91675 9.07897V1.23644C3.91675 0.617677 4.41836 0.116074 5.03712 0.116074Z' fill='%232A2A2A'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14 10.1993C14.6188 10.1993 15.1204 10.7009 15.1204 11.3197V21.403C15.1204 22.0217 14.6188 22.5233 14 22.5233C13.3813 22.5233 12.8797 22.0217 12.8797 21.403V11.3197C12.8797 10.7009 13.3813 10.1993 14 10.1993Z' fill='%232A2A2A'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14 0.116074C14.6188 0.116074 15.1204 0.617677 15.1204 1.23644V6.83825C15.1204 7.45701 14.6188 7.95861 14 7.95861C13.3813 7.95861 12.8797 7.45701 12.8797 6.83825V1.23644C12.8797 0.617677 13.3813 0.116074 14 0.116074Z' fill='%232A2A2A'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M22.9629 14.6808C23.5817 14.6808 24.0833 15.1824 24.0833 15.8012V21.403C24.0833 22.0217 23.5817 22.5233 22.9629 22.5233C22.3442 22.5233 21.8426 22.0217 21.8426 21.403V15.8012C21.8426 15.1824 22.3442 14.6808 22.9629 14.6808Z' fill='%232A2A2A'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M22.9629 0.116074C23.5817 0.116074 24.0833 0.617677 24.0833 1.23644V11.3197C24.0833 11.9385 23.5817 12.4401 22.9629 12.4401C22.3442 12.4401 21.8426 11.9385 21.8426 11.3197V1.23644C21.8426 0.617677 22.3442 0.116074 22.9629 0.116074Z' fill='%232A2A2A'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.555664 13.5604C0.555664 12.9417 1.05727 12.4401 1.67603 12.4401H8.3982C9.01696 12.4401 9.51857 12.9417 9.51857 13.5604C9.51857 14.1792 9.01696 14.6808 8.3982 14.6808H1.67603C1.05727 14.6808 0.555664 14.1792 0.555664 13.5604Z' fill='%232A2A2A'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.51857 6.83825C9.51857 6.21949 10.0202 5.71789 10.6389 5.71789H17.3611C17.9799 5.71789 18.4815 6.21949 18.4815 6.83825C18.4815 7.45701 17.9799 7.95861 17.3611 7.95861H10.6389C10.0202 7.95861 9.51857 7.45701 9.51857 6.83825Z' fill='%232A2A2A'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18.4815 15.8012C18.4815 15.1824 18.9831 14.6808 19.6018 14.6808H26.324C26.9428 14.6808 27.4444 15.1824 27.4444 15.8012C27.4444 16.4199 26.9428 16.9215 26.324 16.9215H19.6018C18.9831 16.9215 18.4815 16.4199 18.4815 15.8012Z' fill='%232A2A2A'/%3E%3C/svg%3E%0A")
+  &_like
+    background-image: url("data:image/svg+xml,%3Csvg width='26' height='23' viewBox='0 0 26 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.7263 0.66436C16.5999 0.30237 17.5363 0.116074 18.482 0.116074C19.4276 0.116074 20.364 0.30237 21.2376 0.66436C22.1111 1.02628 22.9047 1.55673 23.5732 2.2254C24.2418 2.89385 24.7727 3.68784 25.1346 4.56131C25.4966 5.43494 25.6829 6.37134 25.6829 7.317C25.6829 8.26266 25.4966 9.19907 25.1346 10.0727C24.7726 10.9462 24.2421 11.7399 23.5734 12.4084L13.7829 22.1989C13.3503 22.6315 12.6491 22.6315 12.2166 22.1989L2.42607 12.4084C1.07575 11.0581 0.317139 9.22665 0.317139 7.317C0.317139 5.40736 1.07575 3.57592 2.42607 2.2256C3.7764 0.875276 5.60783 0.116682 7.51748 0.116682C9.42712 0.116682 11.2586 0.875276 12.6089 2.2256L12.9997 2.61645L13.3904 2.2258C14.0589 1.55705 14.8527 1.02632 15.7263 0.66436ZM18.482 2.33112C17.8273 2.33112 17.179 2.46014 16.5742 2.71075C15.9694 2.96136 15.4198 3.32867 14.957 3.79171L13.7829 4.96588C13.3503 5.3984 12.6491 5.3984 12.2166 4.96588L11.0426 3.79184C10.1077 2.85692 8.83966 2.33173 7.51748 2.33173C6.1953 2.33173 4.92727 2.85692 3.99235 3.79184C3.05743 4.72677 2.53219 5.99482 2.53219 7.317C2.53219 8.63918 3.05743 9.90724 3.99235 10.8422L12.9997 19.8495L22.0071 10.8422C22.4701 10.3793 22.8376 9.82957 23.0882 9.22475C23.3388 8.61993 23.4678 7.97169 23.4678 7.317C23.4678 6.66232 23.3388 6.01408 23.0882 5.40926C22.8376 4.80443 22.4703 4.25487 22.0073 3.79205C21.5444 3.329 20.9946 2.96136 20.3897 2.71075C19.7849 2.46014 19.1366 2.33112 18.482 2.33112Z' fill='%232A2A2A'/%3E%3C/svg%3E%0A")
+  &_cart
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='23' viewBox='0 0 24 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.12868 20.5749C7.12868 19.4988 8.00104 18.6264 9.07714 18.6264C10.1532 18.6264 11.0256 19.4988 11.0256 20.5749C11.0256 21.651 10.1532 22.5233 9.07714 22.5233C8.00104 22.5233 7.12868 21.651 7.12868 20.5749Z' fill='%232A2A2A'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17.8452 20.5749C17.8452 19.4988 18.7176 18.6264 19.7937 18.6264C20.8698 18.6264 21.7421 19.4988 21.7421 20.5749C21.7421 21.651 20.8698 22.5233 19.7937 22.5233C18.7176 22.5233 17.8452 21.651 17.8452 20.5749Z' fill='%232A2A2A'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.309082 1.0903C0.309082 0.552251 0.745259 0.116074 1.28331 0.116074H5.18022C5.64457 0.116074 6.04438 0.443818 6.13551 0.899131L6.95374 4.98722H22.7163C23.0067 4.98722 23.2819 5.11671 23.467 5.34042C23.6521 5.56413 23.7277 5.85873 23.6733 6.14393L22.1132 14.325C21.9795 14.9978 21.6135 15.6022 21.0792 16.0323C20.5475 16.4603 19.8829 16.6886 19.2007 16.678H9.74805C9.06583 16.6886 8.40121 16.4603 7.86955 16.0323C7.33545 15.6024 6.96954 14.9983 6.83577 14.3259L5.20829 6.19448C5.20169 6.16758 5.1962 6.14026 5.19188 6.11254L4.38168 2.06453H1.28331C0.745259 2.06453 0.309082 1.62835 0.309082 1.0903ZM7.34373 6.93567L8.74674 13.9454C8.79128 14.1697 8.91327 14.3712 9.09138 14.5145C9.26949 14.6579 9.49236 14.7341 9.72097 14.7297L9.73961 14.7295H19.2091L19.2278 14.7297C19.4564 14.7341 19.6793 14.6579 19.8574 14.5145C20.0346 14.3718 20.1563 14.1716 20.2014 13.9486L21.5388 6.93567H7.34373Z' fill='%232A2A2A'/%3E%3C/svg%3E%0A")
+  &_login
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='22' viewBox='0 0 20 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17 22H3C1.3 22 0 20.7 0 19V12C0 10.3 1.3 9 3 9H17C18.7 9 20 10.3 20 12V19C20 20.7 18.7 22 17 22ZM3 11C2.4 11 2 11.4 2 12V19C2 19.6 2.4 20 3 20H17C17.6 20 18 19.6 18 19V12C18 11.4 17.6 11 17 11H3Z' fill='black'/%3E%3Cpath d='M5 11C4.4 11 4 10.6 4 10V6C4 4.4 4.6 2.90005 5.8 1.80005C6.9 0.600049 8.4 0 10 0C12.8 0 15.3 2.00005 15.9 4.80005C16 5.30005 15.6 5.9 15.1 6C14.6 6.1 14 5.79995 13.9 5.19995C13.5 3.29995 11.9 2 10 2C8.9 2 7.9 2.39995 7.2 3.19995C6.4 3.89995 6 4.9 6 6V10C6 10.6 5.6 11 5 11Z' fill='black'/%3E%3C/svg%3E%0A")
+    background-position: 75% 40%
+    padding-right: 35px
+  &_email
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='12' viewBox='0 0 14 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.90913 1.33333C1.56058 1.33333 1.27277 1.63486 1.27277 2V10C1.27277 10.3651 1.56058 10.6667 1.90913 10.6667H12.0909C12.4394 10.6667 12.7272 10.3651 12.7272 10V2C12.7272 1.63486 12.4394 1.33333 12.0909 1.33333H1.90913ZM5.20645e-05 2C5.20645e-05 0.898477 0.857682 0 1.90913 0H12.0909C13.1423 0 13.9999 0.898477 13.9999 2V10C13.9999 11.1015 13.1423 12 12.0909 12H1.90913C0.857682 12 5.20645e-05 11.1015 5.20645e-05 10V2Z' fill='%232A2A2A'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.115087 1.61768C0.316631 1.31604 0.713424 1.24271 1.00134 1.45386L7 5.85291L12.9987 1.45386C13.2866 1.24271 13.6834 1.31604 13.8849 1.61768C14.0865 1.91931 14.0164 2.335 13.7285 2.54614L7.36493 7.21281C7.14582 7.37349 6.85419 7.37349 6.63507 7.21281L0.271487 2.54614C-0.0164329 2.335 -0.0864568 1.91931 0.115087 1.61768Z' fill='%232A2A2A'/%3E%3C/svg%3E%0A")
+    background-position: 20% 45%
+    padding-left: 20px
+  &_black
+    background-color: $black
+    color: #fff
+    box-shadow: 0 2px 2px rgba(81, 75, 0, 0.15)
+  &_yellow
+    background-color: $yellow
+    box-shadow: 0px 2px 2px rgba(81, 75, 0, 0.15)
+  &_white
+    border: 1px solid #fff
+    color: #fff
+  &_strwhite
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='9' viewBox='0 0 10 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 4.5H9M9 4.5L5.5 1M9 4.5L5.5 8' stroke='white'/%3E%3C/svg%3E%0A")
+    background-position: 90% 48%
+    padding-right: 15px
+    &:hover
+      background-image: url("data:image/svg+xml,%3Csvg width='10' height='9' viewBox='0 0 10 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 4.5H9M9 4.5L5.5 1M9 4.5L5.5 8' stroke='%232A2A2A'/%3E%3C/svg%3E%0A")
+  &_strblack
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='9' viewBox='0 0 10 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 4.5H9M9 4.5L5.5 1M9 4.5L5.5 8' stroke='%232A2A2A'/%3E%3C/svg%3E%0A")
+    background-position: 90% 48%
+    padding-right: 15px
+  &_buy
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.08333 12.7826C4.08333 12.1103 4.60567 11.5652 5.25 11.5652C5.89433 11.5652 6.41666 12.1103 6.41666 12.7826C6.41666 13.455 5.89433 14 5.25 14C4.60567 14 4.08333 13.455 4.08333 12.7826Z' fill='%232A2A2A'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.5 12.7826C10.5 12.1103 11.0223 11.5652 11.6667 11.5652C12.311 11.5652 12.8333 12.1103 12.8333 12.7826C12.8333 13.455 12.311 14 11.6667 14C11.0223 14 10.5 13.455 10.5 12.7826Z' fill='%232A2A2A'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0.608696C0 0.272522 0.261167 0 0.583333 0H2.91667C3.1947 0 3.43409 0.204774 3.48866 0.489253L3.97859 3.04348H13.4167C13.5905 3.04348 13.7553 3.12439 13.8661 3.26416C13.9769 3.40393 14.0222 3.588 13.9897 3.76619L13.0555 8.87773C12.9755 9.29809 12.7563 9.67569 12.4364 9.94443C12.118 10.2118 11.7201 10.3545 11.3116 10.3478H5.65172C5.24323 10.3545 4.84528 10.2118 4.52694 9.94443C4.20714 9.6758 3.98804 9.2984 3.90795 8.87825L2.93347 3.79777C2.92952 3.78097 2.92623 3.7639 2.92364 3.74658L2.43852 1.21739H0.583333C0.261167 1.21739 0 0.944869 0 0.608696ZM4.21209 4.26087L5.05217 8.64055C5.07884 8.78067 5.15188 8.90655 5.25852 8.99613C5.36517 9.08571 5.49862 9.13328 5.6355 9.13055L5.64666 9.13043H11.3167L11.3278 9.13055C11.4647 9.13328 11.5982 9.08571 11.7048 8.99613C11.811 8.90697 11.8838 8.78186 11.9108 8.64252L12.7116 4.26087H4.21209Z' fill='%232A2A2A'/%3E%3C/svg%3E%0A")
+    background-position: 25% 40%
+    padding-left: 30px
+
+
+//slider arrows
+.slider-arrow
+  width: 26px
+  height: 26px
+  display: flex
+  align-items: center
+  justify-content: center
+  transition: .5s all ease-in-out
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1)
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  border-radius: 50%
+  border: 2px solid $black
+  background: transparent
+  position: absolute
+  top: 40%
+  &:hover
+    background: #fff
+    border-color: #fff
+  &:active, &:focus
+    outline: none
+    border: 0
+  &_prev
+    left: 30px
+  &_next
+    right: 30px
+.number-arrow
+  top: -70px
+  &_prev
+    left: 78%
+  &_next
+    right: 0
+
+.dots
+  display: flex
+  position: absolute
+  bottom: 20px
+  left: 0
+  right: 0
+  margin: 0 auto
+  text-align: center
+  justify-content: center
+  max-width: 100%
+  box-sizing: border-box
+  &__item
+    background: $black
+    width: 14px
+    height: 14px
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+    border: 0
+    margin-right: 10px
+    position: relative
+    &.active span
+      width: 8px
+      height: 8px
+      background: $yellow
+      -webkit-border-radius: 50%
+      -moz-border-radius: 50%
+      border-radius: 50%
+      display: block
+      position: absolute
+      left: 0
+      right: 0
+      margin: 0 auto
+      top: 20%
+    &:active, &:focus
+      outline: none
+      border: 0
+.dots-number
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+  top: -70px
+  right: 30px
+  &__item
+    margin-right: 5px
+    a
+      width: 26px
+      height: 26px
+      border-radius: 50%
+      display: flex
+      justify-content: center
+      align-items: center
+      font-size: 15px
+    &.active a, &:hover a
+      background-color: #fff
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1)
+      text-decoration: none
+      font-family: $bold
+
+.title
+  font-size: 35px
+  margin-bottom: 23px
+  font-family: $bold
+p
+  font-family: $light
+  margin-bottom: 20px
+  line-height: 22px
+
+// header
+.header
+  height: 100px
+  background: $yellow
+  color: $black
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15)
+.logo
+  &:hover
+    text-decoration: none
+  &__slash
+    height: 58px
+    border-left: 1px solid $black
+    transform: rotate(15deg)
+    margin: 0 12px 0 5px
+.search
+  &__form
+    position: relative
+    height: 50px
+  &__input
+    width: 725px
+  &__submit
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 2.04955C5.13401 2.04955 2 5.18356 2 9.04955C2 12.9155 5.13401 16.0496 9 16.0496C12.866 16.0496 16 12.9155 16 9.04955C16 5.18356 12.866 2.04955 9 2.04955ZM0 9.04955C0 4.07899 4.02944 0.0495529 9 0.0495529C13.9706 0.0495529 18 4.07899 18 9.04955C18 14.0201 13.9706 18.0496 9 18.0496C4.02944 18.0496 0 14.0201 0 9.04955Z' fill='%232A2A2A'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.9429 13.9924C14.3334 13.6019 14.9666 13.6019 15.3571 13.9924L19.7071 18.3424C20.0976 18.7329 20.0976 19.3662 19.7071 19.7567C19.3166 20.1472 18.6834 20.1472 18.2929 19.7567L13.9429 15.4066C13.5524 15.0161 13.5524 14.3829 13.9429 13.9924Z' fill='%232A2A2A'/%3E%3C/svg%3E%0A")
+    background-repeat: no-repeat
+    background-position: 0 0
+    width: 20px
+    height: 21px
+    background-color: transparent
+    border: 0
+    position: absolute
+    right: 2%
+    top: 34%
+.top-counters
+  font-size: 12px
+  line-height: 1
+  display: flex
+  justify-content: center
+  align-items: center
+  background: #fff
+  position: absolute
+  top: -15px
+  right: 0
+  width: 36px
+  height: 23px
+  -webkit-border-radius: 14px
+  -moz-border-radius: 14px
+  border-radius: 14px
+  transition: .4s all ease-in-out
+  &:after
+    content: ''
+    position: absolute
+    border: 5px solid transparent
+    border-top: 5px solid #fff
+    bottom: -9px
+    transition: .4s all ease-in-out
+
+.header-btns
+  &__btn
+    height: 50px
+    width: 50px
+    position: relative
+    &:not(:last-child)
+      margin-right: 20px
+    &:hover
+      background-color: #fff
+      box-shadow: 0 2px 2px rgba(81, 75, 0, 0.15)
+      border: 1px solid #fff
+      .top-counters
+        background-color: $red
+        color: #fff
+        &:after
+          border-top-color: $red
+  &_login
+    width: 100px
+    font-size: 14px
+    svg
+      margin-left: 10px
+  &_cart
+    .top-counters
+      width: 26px
+
+// nav
+.nav
+  background-color: $black
+  margin-bottom: 30px
+  margin-top: 10px
+  color: #fff
+  &__link
+    padding: 17px 10px
+    box-sizing: border-box
+    display: block
+    font-size: 14px
+    transition: .5s all ease-in-out
+    &:hover, &_active
+      background: #fff
+      color: $black
+    &_yellow
+      color: $yellow
+
+//banners
+.banner
+  margin-bottom: 50px
+.banner-slider
+  position: relative
+  &__wrapper
+    background-repeat: no-repeat
+    height: 350px
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+    border-radius: 5px
+  &__item
+    height: 100%
+    display: flex
+    justify-content: center
+    flex-direction: column
+    max-width: 100%
+    width: 600px
+    margin: 0 auto
+  &__title
+    font-size: 45px
+    font-family: $bold, serif
+  &__subtitle
+    font-size: 30px
+    font-family: $medium
+  &__price
+    font-size: 30px
+    font-family: $medium
+    margin: 30px 0
+.stock-banner
+  height: 350px
+  -webkit-border-radius: 5px
+  -moz-border-radius: 5px
+  border-radius: 5px
+  background-position: 100% 100%
+  background-repeat: no-repeat
+  background-color: $yellow
+  padding-top: 25px
+  padding-left: 22px
+  box-sizing: border-box
+  &__title
+    font-family: $bold
+    margin-bottom: 15px
+    font-size: 30px
+    span
+      font-family: $medium
+  &__btn
+    &:hover
+      background-color: transparent
+      border: 1px solid $black
+
+// main news
+.news
+  &__item
+    color: #fff
+    display: flex
+    justify-content: flex-end
+  &__info
+    background-color: rgba(42, 42, 42, 0.95)
+    height: 100%
+    width: 51%
+    padding: 47px 15px 20px 15px
+    box-sizing: border-box
+  &__date
+    font-size: 14px
+    font-family: $light
+    margin-top: 10px
+  &__title
+    font-family: $bold
+    font-size: 30px
+    margin: 20px 0
+    word-wrap: break-word
+  &__description
+    font-family: $light
+    margin-bottom: 25px
+    line-height: 22px
+  &__dots
+    top: 15px
+    right: 15%
+  &__dots-item
+    a
+      color: #fff
+    &.active a, &:hover a
+      color: $black
+.news-arrow
+  top: 15px
+  &_prev
+    left: 20px
+  &_next
+    border-color: #fff
+    right: 20px
+    svg
+      stroke: #fff
+    &:hover
+      svg
+        stroke: #000
+
+
+//main products
+
+.product
+  background-color: #fff
+  border: 1px solid #E3E3E3
+  box-sizing: border-box
+  transition: .5s all ease-in-out
+  padding: 20px 15px
+  position: relative
+  &:hover
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.08)
+  &__title
+    margin: 20px 0
+    font-family: $medium
+    font-size: 18px
+  &__description
+    font-family: $light
+  &__price
+    display: flex
+    align-items: baseline
+    margin: 25px 0 20px
+    &_old
+      color: #777
+      text-decoration: line-through
+      font-size: 15px
+      font-family: $light
+      margin-right: 10px
+    &_new
+      font-size: 20px
+      font-family: $medium
+  &__btns
+    display: flex
+    justify-content: space-between
+  &__like
+    position: absolute
+    top: 20px
+    right: 20px
+    width: 16px
+    height: 15px
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.2'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.71965 0.345844C10.2707 0.11751 10.8614 0 11.4579 0C12.0543 0 12.645 0.117511 13.1961 0.345844C13.747 0.574135 14.2476 0.908727 14.6693 1.3305C15.091 1.75214 15.4259 2.25297 15.6541 2.80393C15.8825 3.35499 16 3.94565 16 4.54214C16 5.13864 15.8825 5.7293 15.6541 6.28036C15.4258 6.83137 15.0912 7.332 14.6694 7.75366L8.4938 13.9293C8.22098 14.2021 7.77865 14.2021 7.50583 13.9293L1.33026 7.75366C0.478511 6.90191 0 5.7467 0 4.54214C0 3.33759 0.478511 2.18238 1.33026 1.33063C2.182 0.478884 3.33722 0.00038375 4.54177 0.00038375C5.74632 0.00038375 6.90154 0.478884 7.75329 1.33063L7.99981 1.57717L8.24623 1.33076C8.6679 0.908929 9.16864 0.574156 9.71965 0.345844ZM11.4579 1.39719C11.0449 1.39719 10.636 1.47857 10.2545 1.63665C9.87299 1.79473 9.52636 2.02641 9.23442 2.31849L8.4938 3.05912C8.22098 3.33194 7.77865 3.33194 7.50583 3.05912L6.76532 2.31857C6.1756 1.72885 5.37577 1.39757 4.54177 1.39757C3.70778 1.39757 2.90794 1.72885 2.31822 2.31857C1.7285 2.90829 1.39719 3.70815 1.39719 4.54214C1.39719 5.37614 1.7285 6.17599 2.31822 6.76572L7.99981 12.4473L13.6814 6.76572C13.9735 6.47378 14.2053 6.127 14.3634 5.7455C14.5215 5.36399 14.6028 4.9551 14.6028 4.54214C14.6028 4.12919 14.5215 3.7203 14.3634 3.33879C14.2053 2.95729 13.9736 2.61064 13.6815 2.3187C13.3896 2.02663 13.0427 1.79473 12.6612 1.63665C12.2797 1.47857 11.8708 1.39719 11.4579 1.39719Z' fill='%232A2A2A'/%3E%3Cpath d='M11.4579 1.39719C11.0449 1.39719 10.636 1.47857 10.2545 1.63665C9.87299 1.79473 9.52636 2.02641 9.23442 2.31849L8.4938 3.05912C8.22098 3.33194 7.77865 3.33194 7.50583 3.05912L6.76532 2.31857C6.1756 1.72885 5.37577 1.39757 4.54177 1.39757C3.70778 1.39757 2.90794 1.72885 2.31822 2.31857C1.7285 2.90829 1.39719 3.70815 1.39719 4.54214C1.39719 5.37614 1.7285 6.17599 2.31822 6.76572L7.99981 12.4473L13.6814 6.76572C13.9735 6.47378 14.2053 6.127 14.3634 5.7455C14.5215 5.36399 14.6028 4.9551 14.6028 4.54214C14.6028 4.12919 14.5215 3.7203 14.3634 3.33879C14.2053 2.95729 13.9736 2.61064 13.6815 2.3187C13.3896 2.02663 13.0427 1.79473 12.6612 1.63665C12.2797 1.47857 11.8708 1.39719 11.4579 1.39719Z' fill='%232A2A2A'/%3E%3C/g%3E%3C/svg%3E%0A")
+    background-repeat: no-repeat
+    display: block
+    transition: .3s all ease-in-out
+    cursor: pointer
+    &_active, &:hover
+      background-image: url("data:image/svg+xml,%3Csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.71965 0.345844C10.2707 0.11751 10.8614 0 11.4579 0C12.0543 0 12.645 0.117511 13.1961 0.345844C13.747 0.574135 14.2476 0.908727 14.6693 1.3305C15.091 1.75214 15.4259 2.25297 15.6541 2.80393C15.8825 3.35499 16 3.94565 16 4.54214C16 5.13864 15.8825 5.7293 15.6541 6.28036C15.4258 6.83137 15.0912 7.332 14.6694 7.75366L8.4938 13.9293C8.22098 14.2021 7.77865 14.2021 7.50583 13.9293L1.33026 7.75366C0.478511 6.90191 0 5.7467 0 4.54214C0 3.33759 0.478511 2.18238 1.33026 1.33063C2.182 0.478884 3.33722 0.00038375 4.54177 0.00038375C5.74632 0.00038375 6.90154 0.478884 7.75329 1.33063L7.99981 1.57717L8.24623 1.33076C8.6679 0.908929 9.16864 0.574156 9.71965 0.345844ZM11.4579 1.39719C11.0449 1.39719 10.636 1.47857 10.2545 1.63665C9.87299 1.79473 9.52636 2.02641 9.23442 2.31849L8.4938 3.05912C8.22098 3.33194 7.77865 3.33194 7.50583 3.05912L6.76532 2.31857C6.1756 1.72885 5.37577 1.39757 4.54177 1.39757C3.70778 1.39757 2.90794 1.72885 2.31822 2.31857C1.7285 2.90829 1.39719 3.70815 1.39719 4.54214C1.39719 5.37614 1.7285 6.17599 2.31822 6.76572L7.99981 12.4473L13.6814 6.76572C13.9735 6.47378 14.2053 6.127 14.3634 5.7455C14.5215 5.36399 14.6028 4.9551 14.6028 4.54214C14.6028 4.12919 14.5215 3.7203 14.3634 3.33879C14.2053 2.95729 13.9736 2.61064 13.6815 2.3187C13.3896 2.02663 13.0427 1.79473 12.6612 1.63665C12.2797 1.47857 11.8708 1.39719 11.4579 1.39719Z' fill='%232A2A2A'/%3E%3Cpath d='M11.4579 1.39719C11.0449 1.39719 10.636 1.47857 10.2545 1.63665C9.87299 1.79473 9.52636 2.02641 9.23442 2.31849L8.4938 3.05912C8.22098 3.33194 7.77865 3.33194 7.50583 3.05912L6.76532 2.31857C6.1756 1.72885 5.37577 1.39757 4.54177 1.39757C3.70778 1.39757 2.90794 1.72885 2.31822 2.31857C1.7285 2.90829 1.39719 3.70815 1.39719 4.54214C1.39719 5.37614 1.7285 6.17599 2.31822 6.76572L7.99981 12.4473L13.6814 6.76572C13.9735 6.47378 14.2053 6.127 14.3634 5.7455C14.5215 5.36399 14.6028 4.9551 14.6028 4.54214C14.6028 4.12919 14.5215 3.7203 14.3634 3.33879C14.2053 2.95729 13.9736 2.61064 13.6815 2.3187C13.3896 2.02663 13.0427 1.79473 12.6612 1.63665C12.2797 1.47857 11.8708 1.39719 11.4579 1.39719Z' fill='%232A2A2A'/%3E%3C/svg%3E%0A")
+
+//reviews
+
+.reviews
+  margin-top: 45px
+  &__info
+    background: #fff
+    border: 1px solid #E3E3E3
+    box-sizing: border-box
+    box-shadow: 0 10px 10px rgba(0,0,0,.08)
+    padding: 30px 20px
+  &__img
+    img
+      width: 215px !important
+  &__name
+    font-size: 18px
+    font-family: $bold
+    line-height: 25px
+    margin-bottom: 15px
+    span
+      font-family: $regular
+      display: block
+  &__company
+    font-size: 18px
+  &__text
+    line-height: 21px
+    font-family: $bold
+    margin-top: 25px
+
+
+// works
+.works
+  margin-top: 60px
+  padding-bottom: 75px
+  &__left, &__right
+    flex: 0 0 50%
+    max-width: 50%
+  &__left
+    display: flex
+    justify-content: flex-end
+    background-repeat: no-repeat
+    background-size: cover
+    margin-right: 20px
+  &__preview
+    background-color: $yellow
+    width: 50%
+    padding: 45px 20px 40px 30px
+  &__title
+    font-size: 35px
+    font-family: $bold
+    margin-bottom: 30px
+  &__introtext
+    font-family: $light
+    margin-bottom: 45px
+    line-height: 19px
+  &__price-title
+    font-family: $light
+    margin-bottom: 25px
+  &__price
+    font-family: $bold
+    font-size: 35px
+  &__list-title
+    font-size: 20px
+    font-family: $bold
+    margin-bottom: 20px
+    margin-top: 15px
+  &__list
+    margin-bottom: 30px
+  &__list-item
+    font-family: $light
+    margin-bottom: 20px
+    display: flex
+    align-items: center
+    &:before
+      content: ''
+      display: block
+      height: 1px
+      width: 10px
+      background-color: #000
+      margin-right: 10px
+      
+// main content
+
+.main-content
+  background-color: #fff
+  padding: 65px 0 45px
+  
+// subscribe
+.subscribe
+  background-color: #fff
+  padding-bottom: 70px
+  &__wrapper
+    background-image: url('/assets/img/subscribe-bg.png')
+    background-color: #2A2A2A
+    background-repeat: no-repeat
+    position: relative
+    box-sizing: border-box
+    padding: 30px 0
+  &__title
+    color: #fff
+    font-size: 35px
+    line-height: 30px
+  &__line
+    border: 1px solid #fff
+    transform: rotate(15deg)
+    height: 63px
+    margin-right: 45px
+    margin-left: 30px
+  &__input
+    width: 400px
+    margin-right: 20px
+  &__btn
+    height: 50px
+    width: 178px
+
+//footer
+.footer
+  background-color: $black
+  padding: 55px 50px
+  color: #fff
+  &__item:not(:last-child)
+    margin-right: 40px
+  &__title
+    font-family: $bold
+    font-size: 18px
+    display: block
+  &__list
+    margin-top: 30px
+  &__link
+    margin-bottom: 20px
+    display: block
+    white-space: nowrap
+    &_yellow
+      color: $yellow
+      text-decoration: underline
+  &__phone
+    font-size: 30px
+    font-family: $medium
+  &__social
+    margin-top: 60px
+.social
+  &__title
+    font-family: $bold
+    font-size: 18px
+    margin-bottom: 35px
+  &__item
+    width: 40px
+    height: 40px
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+    border: 1px solid #fff
+    transition: .5s all ease-in-out
+    margin-right: 10px
+    svg
+      fill: #fff
+    &:hover
+      background-color: $yellow
+      border-color : $yellow
+      svg
+        fill: #000
+
+//copyright
+.copyright
+  background-color: #000
+  padding: 32px 0
+  color: #fff
+  &__line
+    transform: rotate(15deg)
+    border: 1px solid #fff
+    &_big
+      height: 35px
+      margin-left: 10px
+      margin-right: 20px
+    &_small
+      height: 17px
+      margin: 0 15px
+  &__year
+    margin-bottom: 7px
+
