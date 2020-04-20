@@ -6,7 +6,8 @@
 $(document).ready(function () {
     let arrow_prev = "<svg width='11' height='10' viewBox='0 0 11 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M11 5H2M2 5L5.5 1.5M2 5L5.5 8.5' stroke='#2A2A2A' stroke-width='2'/></svg>",
         arrow_next = "<svg width='11' height='10' viewBox='0 0 11 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 5H9M9 5L5.5 1.5M9 5L5.5 8.5' stroke='#2A2A2A' stroke-width='2'/></svg>",
-        arrow_next_white = "<svg width='11' height='10' viewBox='0 0 11 10' xmlns='http://www.w3.org/2000/svg'><path d='M0 5H9M9 5L5.5 1.5M9 5L5.5 8.5'  stroke-width='2'/></svg>"
+        arrow_next_white = "<svg width='11' height='10' viewBox='0 0 11 10' xmlns='http://www.w3.org/2000/svg'><path d='M0 5H9M9 5L5.5 1.5M9 5L5.5 8.5'  stroke-width='2'/></svg>",
+        arrow_prev_white = "<svg width='11' height='10' viewBox='0 0 11 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M11 5H2M2 5L5.5 1.5M2 5L5.5 8.5' stroke-width='2'/></svg>"
 
     // js-banner-slider
     $('.js-banner-slider').owlCarousel({
@@ -37,6 +38,9 @@ $(document).ready(function () {
         dotClass: 'dots-number__item',
         responsive: {
             0: {
+                items: 1
+            },
+            400: {
                 items: 2
             },
             600: {
@@ -77,10 +81,10 @@ $(document).ready(function () {
         dotsClass: 'dots-number',
         dotClass: 'dots-number__item',
         responsive: {
-            600: {
+            0: {
                 items: 1
             },
-            1000: {
+            1200: {
                 items: 2
             }
         }
@@ -110,3 +114,9 @@ $(document).ready(function () {
 //             .removeClass('feed-open');
 //     });
 // });
+$(() => {
+    $('.js-open-footer-list').on('click', function openFooterMenu() {
+        $(this).toggleClass('is-active')
+        $(this).next('.footer__list').toggleClass('open')
+    })
+})

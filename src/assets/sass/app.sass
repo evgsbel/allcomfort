@@ -44,9 +44,12 @@ button
   font-size: 14px
   color: $black
 .top-nav
+  &__wrapper
+    justify-content: flex-start
   &__item
     margin-right: 15px
 .top-contacts
+  justify-content: flex-end
   &__slash
     border: 1px solid $black
     height: 19px
@@ -57,6 +60,7 @@ button
     font-size: 16px
 //forms
 .form
+  max-width: 100%
   &__input
     max-width: 100%
     border: 0
@@ -82,10 +86,26 @@ button
     height: 19px
   &__link
     font-family: $light
-    border-bottom: 1px solid $yellow
+    position: relative
+    transition: width .3s ease-in-out
+    &:after
+      content: ''
+      width: 0
+      background-color: $yellow
+      display: block
+      height: 3px
+      -webkit-transition: width .3s ease-in-out
+      -o-transition: width .3s ease-in-out
+      transition: width .3s ease-in-out
+      position: absolute
+      bottom: -5px
+      left: 0
     &:hover
-      border-bottom: 0
       text-decoration: none
+    &:hover:after
+      width: 100%
+
+
 // buttons
 .button
   display: flex
@@ -615,10 +635,10 @@ p
 //footer
 .footer
   background-color: $black
-  padding: 55px 50px
+  padding: 55px 0 50px
   color: #fff
   &__item:not(:last-child)
-    margin-right: 40px
+    margin-right: 45px
   &__title
     font-family: $bold
     font-size: 18px
@@ -629,19 +649,20 @@ p
     margin-bottom: 20px
     display: block
     white-space: nowrap
-    &_yellow
+    transition: .3s all ease-in-out
+    &:hover
       color: $yellow
       text-decoration: underline
   &__phone
     font-size: 30px
     font-family: $medium
   &__social
-    margin-top: 60px
+    margin-top: 40px
 .social
   &__title
     font-family: $bold
     font-size: 18px
-    margin-bottom: 35px
+    margin-bottom: 30px
   &__item
     width: 40px
     height: 40px
@@ -677,3 +698,6 @@ p
   &__year
     margin-bottom: 7px
 
+// for-mobile
+.only-mobile
+  display: none

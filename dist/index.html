@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>AllComfort</title>
-<link href="./assets/css/vendors.e918bb9748f8e333c832.css" rel="stylesheet"><link href="./assets/css/app.a219542ff22a34c3548f.css" rel="stylesheet"></head>
+<link href="./assets/css/vendors.e918bb9748f8e333c832.css" rel="stylesheet"><link href="./assets/css/app.74c9f47c6abc95486b57.css" rel="stylesheet"></head>
 <body>
 <div class="hide-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
@@ -40,21 +40,19 @@
             <path d="M18.7 14.8C18.7 17 16.9 18.8 14.8 18.8H5.9C3.7 18.8 2 17 2 14.8V5.9C2 3.7 3.8 1.9 5.9 1.9H14.8C17 1.9 18.7 3.7 18.7 5.9V14.8ZM14.6 0H5.9C2.6 0 0 2.7 0 6V14.7C0 18 2.7 20.7 5.9 20.7H12.7H14.6C17.9 20.7 20.5 18 20.5 14.7V6C20.6 2.7 17.9 0 14.6 0ZM10.3 13.8C8.4 13.8 6.8 12.2 6.8 10.3C6.8 8.4 8.3 6.8 10.3 6.8C12.3 6.8 13.8 8.4 13.8 10.3C13.8 12.3 12.2 13.8 10.3 13.8ZM10.3 5C7.4 5 5 7.4 5 10.4C5 13.4 7.4 15.8 10.3 15.8C13.2 15.8 15.6 13.4 15.6 10.4C15.6 7.4 13.2 5 10.3 5ZM15.8 3.5C15.1 3.5 14.6 4.1 14.6 4.7C14.6 5.3 15.2 5.9 15.8 5.9C16.5 5.9 17 5.3 17 4.7C17 4.1 16.5 3.5 15.8 3.5Z"/>
         </symbol>
     </svg>
-
-
 </div>
 <section class="top-bar">
     <div class="container">
         <div class="row justify-content-between align-items-center">
-            <div class="col-xl-6 top-bar__nav top-nav">
-                <ul class="top-nav__wrapper d-flex justify-content-start">
+            <div class="col-md-12 col-lg-6 top-bar__nav top-nav">
+                <ul class="top-nav__wrapper d-flex">
                     <li class="top-nav__item"><a href="adasd" class="top-nav__link">адрес магазинов </a></li>
                     <li class="top-nav__item"><a href="" class="top-nav__link">доставка</a></li>
                     <li class="top-nav__item"><a href="" class="top-nav__link">статус заказа </a></li>
                     <li class="top-nav__item"><a href="" class="top-nav__link">кредит и рассрочка</a></li>
                 </ul>
             </div>
-            <div class="col-xl-6 top-bar__contacts top-contacts d-flex justify-content-end align-items-center">
+            <div class="col-md-12 col-lg-6 top-bar__contacts top-contacts d-flex align-items-center">
                 <div class="top-contacts__time">Прием звакнков с 9:00 до 18:00 без выходных</div>
                 <div class="top-contacts__slash"></div>
                 <a href="tel:88002346433" class="top-contacts__phone">8 800 234 64 33</a>
@@ -64,7 +62,7 @@
 </section>
 <header class="header">
     <div class="container h-100">
-        <div class="row h-100 align-items-center justify-content-between">
+        <div class="row h-100 align-items-center justify-content-between m-0">
             <a href="/" class="header__logo logo d-flex align-items-center">
                 <div class="logo__img">
                     <img src="./assets/img/logo.png" alt="">
@@ -101,7 +99,7 @@
 </header>
 <nav class="nav">
     <div class="container">
-        <ul class="row nav__wrapper justify-content-between">
+        <ul class="row nav__wrapper">
             <li class="nav__item"><a href="" class="nav__link nav__link_yellow">Акции</a></li>
             <li class="nav__item"><a href="" class="nav__link nav__link_active">Кондиционеры</a></li>
             <li class="nav__item"><a href="" class="nav__link">Ветниляция</a></li>
@@ -120,14 +118,14 @@
 <section class="banner">
     <div class="container">
         <div class="row justify-content-between">
-            <div class="col-xl-8 banner__left banner-slider js-banner-slider owl-carousel owl-theme">
+            <div class="col-lg-8 col-md-12 banner__left banner-slider js-banner-slider owl-carousel owl-theme">
                 <!--Item-->
                 <div class="banner-slider__wrapper" style="background-image: url('./assets/img/bannerLeftBg.jpg')">
                     <div class="banner-slider__item">
                         <div class="banner-slider__title">Компактная вентиляция</div>
                         <div class="banner-slider__subtitle">установка наш конек</div>
                         <div class="banner-slider__price">до 4 000 ₽</div>
-                        <button class="button button_black button_strwhite">Подробнее</button>
+                        <button class="button button_black button_strwhite banner__btn">Подробнее</button>
                     </div>
                 </div>
                 <!--Item END-->
@@ -191,14 +189,16 @@
                 </div>
                 <!--Item END-->
             </div>
-            <div class="col-xl-4 banner__right stock-banner"
-                 style="background-image: url('./assets/img/bannerRightBg.png');">
-                <div class="stock-banner__title">
-                    При покупке <br>
-                    <span>системы <br>вентиляции</span>
+            <div class="col-lg-4 col-md-12">
+                <div class="banner__right stock-banner"
+                     style="background-image: url('./assets/img/bannerRightBg.png');">
+                    <div class="stock-banner__title">
+                        При покупке <br>
+                        <span>системы <br>вентиляции</span>
+                    </div>
+                    <div class="stock-banner__title">установка <br>в подарок</div>
+                    <button class="button button_black button_strwhite stock-banner__btn">Подробнее</button>
                 </div>
-                <div class="stock-banner__title">установка <br>в подарок</div>
-                <button class="button button_black button_strwhite stock-banner__btn">Подробнее</button>
             </div>
         </div>
     </div>
@@ -206,7 +206,7 @@
 <main class="main" id="main">
     <div class="container">
         <div class="row">
-            <section class="col-xl-4 news main-news">
+            <section class="col-xl-4 col-lg-12 news main-news">
                 <div class="caption">
                     <div class="caption__title">Новости</div>
                     <div class="caption__line"></div>
@@ -267,7 +267,7 @@
                     <!--Item END-->
                 </div>
             </section>
-            <section class="col-xl-8  recommended main-recommended">
+            <section class="col-xl-8 col-lg-12 recommended main-recommended">
                 <div class="caption">
                     <div class="caption__title">Рекомендуемые товары</div>
                     <div class="caption__line"></div>
@@ -371,7 +371,7 @@
             </div>
             <div class="js-reviews-slider owl-carousel owl-theme">
                 <!--item-->
-                <div class="d-flex" data-dot="<a href='#rev1'>1</a>" data-hash="rev1">
+                <div class="d-flex reviews__item" data-dot="<a href='#rev1'>1</a>" data-hash="rev1">
                     <div class="reviews__img"><img src="./assets/img/rev-01.png" alt=""></div>
                     <div class="reviews__info">
                         <div class="reviews__name">
@@ -388,7 +388,7 @@
                 </div>
                 <!--item END-->
                 <!--item-->
-                <div class="d-flex" data-dot="<a href='#rev2'>2</a>" data-hash="rev2">
+                <div class="d-flex reviews__item" data-dot="<a href='#rev2'>2</a>" data-hash="rev2">
                     <div class="reviews__img"><img src="./assets/img/rev-02.png" alt=""></div>
                     <div class="reviews__info">
                         <div class="reviews__name">
@@ -405,7 +405,7 @@
                 </div>
                 <!--item END-->
                 <!--item-->
-                <div class="d-flex" data-dot="<a href='#rev3'>3</a>" data-hash="rev3">
+                <div class="d-flex reviews__item" data-dot="<a href='#rev3'>3</a>" data-hash="rev3">
                     <div class="reviews__img"><img src="./assets/img/rev-01.png" alt=""></div>
                     <div class="reviews__info">
                         <div class="reviews__name">
@@ -422,7 +422,7 @@
                 </div>
                 <!--item END-->
                 <!--item-->
-                <div class="d-flex" data-dot="<a href='#rev4'>4</a>" data-hash="rev4">
+                <div class="d-flex reviews__item" data-dot="<a href='#rev4'>4</a>" data-hash="rev4">
                     <div class="reviews__img"><img src="./assets/img/rev-02.png" alt=""></div>
                     <div class="reviews__info">
                         <div class="reviews__name">
@@ -463,6 +463,7 @@
                                 с оборудованием
                             </div>
                             <div class="works__price">1 250 000 ₽</div>
+                            <button class="button button_strblack mt-3 only-mobile">Подробнее</button>
                         </div>
                     </div>
                     <div class="works__right">
@@ -695,7 +696,7 @@
     <section class="main-content">
         <div class="container">
             <div class="row">
-                <div class="col-xl-12">
+                <div class="col-sm-12">
                     <div class="title">Тут будет заголовок про кондиционеры</div>
                     <p>Идейные соображения высшего порядка, а также рамки и место обучения кадров позволяет выполнять
                         важные задания по разработке направлений прогрессивного развития. Не следует, однако забывать,
@@ -719,11 +720,11 @@
     <section class="subscribe">
         <div class="container">
             <div class="row">
-                <div class="col-xl-12">
+                <div class="col-sm-12">
                     <div class="subscribe__wrapper d-flex align-items-center justify-content-center">
                         <div class="subscribe__title">Получайте самые интересные <br>предложения первыми</div>
                         <div class="subscribe__line"></div>
-                        <form action="" class="subsribe__form form d-flex">
+                        <form action="" class="subscribe__form form d-flex">
                             <input class="form__input subscribe__input" type="email" placeholder="Введите e-mail"
                                    required>
                             <button type="submit" class="button button_yellow button_email subscribe__btn">Подписаться
@@ -738,10 +739,10 @@
 <footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-xl-12">
+            <div class="col-sm-12">
                 <div class="footer__wrapper d-flex justify-content-between">
                     <div class="footer__item">
-                        <div class="footer__title">Компания ALC</div>
+                        <div class="footer__title js-open-footer-list">Компания ALC</div>
                         <ul class="footer__list">
                             <li class="footer__list-item"><a href="" class="footer__link">Новости</a></li>
                             <li class="footer__list-item"><a href="" class="footer__link">Нам не все равно</a></li>
@@ -761,7 +762,7 @@
                         </ul>
                     </div>
                     <div class="footer__item">
-                        <div class="footer__title">Интернет-магазин</div>
+                        <div class="footer__title js-open-footer-list">Интернет-магазин</div>
                         <ul class="footer__list">
                             <li class="footer__list-item"><a href="" class="footer__link">Помощь покупателю</a></li>
                             <li class="footer__list-item"><a href="" class="footer__link">Словарь терминов</a></li>
@@ -776,7 +777,7 @@
                         </ul>
                     </div>
                     <div class="footer__item">
-                        <div class="footer__title">С нами выгодно</div>
+                        <div class="footer__title js-open-footer-list">С нами выгодно</div>
                         <ul class="footer__list">
                             <li class="footer__list-item"><a href="" class="footer__link">Акции</a></li>
                             <li class="footer__list-item"><a href="" class="footer__link">ALClub</a></li>
@@ -789,7 +790,7 @@
                         </ul>
                     </div>
                     <div class="footer__item">
-                        <div class="footer__title">С нами удобно</div>
+                        <div class="footer__title js-open-footer-list">С нами удобно</div>
                         <ul class="footer__list">
                             <li class="footer__list-item"><a href="" class="footer__link">ALСервис</a></li>
                             <li class="footer__list-item"><a href="" class="footer__link">Оплата кредита</a></li>
@@ -803,7 +804,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footer__item footer-contacts">
+                    <div class="footer__item footer__contacts">
                         <div class="footer__title mb-4">Свяжитесь с нами</div>
                         <a href="" class="footer__title mb-4">Контакты</a>
                         <div class="footer__title mb-3">Обратная связь</div>
@@ -868,5 +869,5 @@
         </div>
     </div>
 </div>
-<script src="./assets/js/vendors.9f14c7cfcbb0e6479bec.js"></script><script src="./assets/js/app.234a3a5bcdc780669349.js"></script></body>
+<script src="./assets/js/vendors.9f14c7cfcbb0e6479bec.js"></script><script src="./assets/js/app.ea8d90b6e66e1e23dd8d.js"></script></body>
 </html>

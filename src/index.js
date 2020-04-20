@@ -7,3 +7,4 @@ import './js/app'
 
 // SCSS
 import './assets/sass/app.sass'
+import './assets/sass/media.sass'
