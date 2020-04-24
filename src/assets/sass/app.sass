@@ -1,6 +1,5 @@
 @import 'utils/libs.sass'
 @import 'utils/font.sass'
-@import 'utils/media.sass'
 
 
 $regular: 'gt_eesti_pro_displayregular'
@@ -13,7 +12,7 @@ $grey: #E5E5E5
 $red: #F44D43
 
 .container
-  width: 1366px
+  width: 1400px
   max-width: 100%
   margin: 0 auto
 body
@@ -278,6 +277,7 @@ p
   background: $yellow
   color: $black
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15)
+  position: relative
 .logo
   &:hover
     text-decoration: none
@@ -358,6 +358,8 @@ p
   margin-bottom: 30px
   margin-top: 10px
   color: #fff
+  &__wrapper
+    justify-content: space-between
   &__link
     padding: 17px 10px
     box-sizing: border-box
@@ -701,3 +703,58 @@ p
 // for-mobile
 .only-mobile
   display: none
+
+.hamburger
+    display: none
+    width: 26px
+    height: 26px
+    -webkit-transition: .5s all ease-in-out
+    -o-transition: .5s all ease-in-out
+    transition: .5s all ease-in-out
+    z-index: 10
+    position: relative
+    &:before, &:after
+      position: absolute
+      content: ''
+      left: 10px
+      -webkit-transform: translateX(-50%)
+      -ms-transform: translateX(-50%)
+      transform: translateX(-50%)
+      background-color: $black
+      width: 33px
+      height: 3px
+      -webkit-transition: .5s all ease-in-out
+      -o-transition: .5s all ease-in-out
+      transition: .5s all ease-in-out
+    &:before
+      top: 15px
+    &:after
+      bottom: 15px
+    &.is-active:before
+      transform: translateX(-50%) rotate(45deg)
+      background-color: $black
+      top: 1px
+    &.is-active:after
+      transform: translateX(-50%) rotate(-45deg)
+      background-color: $black
+      bottom: 23px
+
+.mobile-menu
+  display: none
+  text-align: center
+  margin: 0 auto
+  padding-top: 10px
+  border-top: 2px solid $black
+  max-width: 100%
+  &_open
+    display: block
+  &__nav
+    background-color: #fff
+    margin: 10px 0
+    box-shadow: 0px 2px 2px rgba(81, 75, 0, 0.15)
+    padding: 25px 0 10px
+  &__nav-item
+    margin-bottom: 20px
+  &__nav-link
+    font-size: 20px
+    text-decoration: underline

@@ -5,8 +5,9 @@
   .social
     flex-wrap: wrap
     &__item
-      margin-right: 30px
       margin-bottom: 15px
+    &__item:not(:last-child)
+      margin-right: 30px
 @media (max-width: 1199.98px)
   .search
     &__input
@@ -91,12 +92,12 @@
   .banner .slider-arrow
     top: 50%
     &_prev
-      left: 0
+      left: 10px
     &_next
-      right: 0
+      right: 10px
   .top-bar
     display: none
-  .search
+  .header__search
     display: none
   .nav
     display: none
@@ -106,9 +107,9 @@
   .number-arrow
     top: -30px
   .number-arrow_prev
-    left: 0
+    left: 10px
   .number-arrow_next
-    right: 0
+    right: 10px
   .dots-number
     top: -30px
   .news .dots-number, .news .number-arrow
@@ -151,8 +152,12 @@
     &__input
       margin-right: 0
       margin-bottom: 15px
-  .social__item
-    margin-right: 50px
+  .footer
+    &__item
+      width: 100%
+      margin-bottom: 15px
+  .social__item:not(:last-child)
+    margin-right: 8px
   .copyright__wr
     text-align: center
     line-height: 1.5
@@ -160,6 +165,13 @@
   .copyright__wr .d-flex
     flex-wrap: wrap
     justify-content: center
+  .hamburger
+    display: block
+@media (max-width: 359.98px)
+  .header-btns__btn:not(:last-child)
+    margin-right: 15px
+  .hamburger
+    margin-top: 15px
 
 
 
