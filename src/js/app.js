@@ -52,7 +52,36 @@ $(document).ready(function () {
         }
     });
 
-    // main product slider
+    // main recommend slider
+    $('.js-recommended-slider').owlCarousel({
+        loop: true,
+        margin: 18,
+        dotsData: true,
+        nav: true,
+        URLhashListener:true,
+        dots: true,
+        navText: [arrow_prev, arrow_next],
+        navClass: ["slider-arrow slider-arrow_prev products number-arrow number-arrow_prev", "slider-arrow slider-arrow_next products number-arrow number-arrow_next"],
+        navContainerClass: 'slider-arrow__wrp number-arrow__wrp',
+        dotsClass: 'dots-number',
+        dotClass: 'dots-number__item',
+        responsive: {
+            0: {
+                items: 1
+            },
+            400: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 6
+            }
+        }
+    });
+
+    // main news slider
     $('.js-news-slider').owlCarousel({
         items: 1,
         loop: true,
@@ -66,6 +95,7 @@ $(document).ready(function () {
         dotsClass: 'dots-number news__dots',
         dotClass: 'dots-number__item news__dots-item',
     });
+
 
     //reviews slider
     $('.js-reviews-slider').owlCarousel({
@@ -121,3 +151,8 @@ $(() => {
         $(this).next('.footer__list').toggleClass('open')
     })
 })
+
+$('.js-select').select2({
+    minimumResultsForSearch: -1,
+    id: "id"
+});
