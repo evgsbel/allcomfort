@@ -829,11 +829,16 @@ p
     font-family: $light, serif
     color: #000
     border-bottom: 1px solid $yellow
+    transition: .3s all ease-in-out
+    &:hover
+      border-bottom: 1px solid $black
+      text-decoration: none
     &_active
       cursor: text
       border-bottom: 0
+      text-decoration: none
       &:hover
-        text-decoration: none
+        border-bottom: 0
   &__separator
     margin: 0 10px
     font-size: 20px
@@ -1133,6 +1138,41 @@ p
     &_minus
       left: 5px
 
+// radiobutton
+.radio
+  position: absolute
+  z-index: -1
+  opacity: 0
+  margin: 10px 0 0 7px
+  + label
+    position: relative
+    padding: 0 0 0 35px
+    cursor: pointer
+    &:before
+      content: ''
+      position: absolute
+      top: -3px
+      left: 0
+      width: 26px
+      height: 26px
+      border: 2px solid #2A2A2A
+      border-radius: 50%
+      background: #FFF
+    &:after
+      content: ''
+      position: absolute
+      top: 2px
+      left: 5px
+      width: 16px
+      height: 16px
+      border-radius: 50%
+      background: #57A53C
+      border: 2px solid #FFFFFF
+      opacity: 0
+      transition: .3s
+  &:checked + label:after
+    opacity: 1
+    
 
 
 .product-tabs
@@ -1211,4 +1251,122 @@ p
   left: 0
   .owl-item
     transform: rotate(-90deg)
+
+//cart
+
+.cart
+  &__titles
+    text-align: center
+    font-size: 18px
+    font-family: $medium, serif
+  &__wrapper
+    background-color: #fff
+    border-radius: 5px
+    padding: 20px 20px 20px 23px
+    font-family: $medium, serif
+    color: $black
+    text-align: center
+    margin-top: 20px
+  &__name
+    text-align: left
+  &__article
+    text-align: left
+    margin-bottom: 10px
+  &__del
+    transition: .3s all ease-in-out
+    cursor: pointer
+    svg
+      transition: .3s all ease-in-out
+      fill: #9E9E9E
+    &:hover
+      svg
+        fill: #F44D43
+  &__info
+    background-color: #fff
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    border-radius: 5px
+    padding: 20px 20px 20px 23px
+    font-family: $medium, serif
+    color: $black
+    margin-top: 20px
+    &-title
+      font-size: 25px
+      padding-bottom: 19px
+      margin-bottom: 30px
+      border-bottom: 1px solid #C4C4C4
+    &-item
+      justify-content: space-between
+      font-size: 18px
+      margin-bottom: 31px
+      &:last-child
+        margin-bottom: 10px
+      &_service
+        font-family: $light, serif
+        margin-top: 15px
+  &__result
+    text-align: right
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-end
+    margin-top: 45px
+    margin-bottom: 50px
+    &-sum
+      font-family: $medium, serif
+      width: 100%
+      margin-bottom: 20px
+      span
+        font-size: 30px
+        padding-left: 20px
+    &-btn
+      width: 167px
+      border: 0
+
+
+// order
+
+.order
+  &__title
+    font-size: 30px
+    font-family: $medium, serif
+    margin-bottom: 30px
+  &__input
+    border: 1px solid #C4C4C4
+    box-sizing: border-box
+    border-radius: 5px
+    height: 40px
+    margin-bottom: 20px
+  &__line
+    height: 1px
+    background-color: #C4C4C4
+    margin: 20px 0 25px
+  &__delivery
+    margin-bottom: 30px
+    &-change
+      font-size: 25px
+      display: inline-block
+      font-family: $medium, serif
+      color: #777
+      border-bottom: 1px dashed #777
+      cursor: pointer
+      &_active
+        color: #000
+        border-color: #000
+  &__pay
+    &-item
+      margin-bottom: 75px
+    &-title
+      color: #777
+      font-size: 25px
+      font-family: $medium, serif
+      padding-left: 30px
+    &-subtitle
+      padding-left: 38px
+      margin-top: 15px
+  &__radio:checked + label
+      color: #000
+
+
+
+
+
 

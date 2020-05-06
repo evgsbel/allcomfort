@@ -6,8 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>AllComfort - Категория</title>
-<link href="assets/css/vendors.28e1574bed3a51956051.css" rel="stylesheet"><link href="assets/css/app.1b95344cfecd8c6bddcd.css" rel="stylesheet"></head>
+    <title>AllComfort - Оформить заказ</title>
+</head>
 <body>
 <div class="hide-svg">
     <svg xmlns="http://www.w3.org/2000/svg">
@@ -346,6 +346,18 @@
                   stroke="#2A2A2A" stroke-width="2.8"/>
         </symbol>
     </svg>
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="cart-del" width="20" height="22" viewBox="0 0 20 22">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0 5C0 4.44772 0.447715 4 1 4H19C19.5523 4 20 4.44772 20 5C20 5.55228 19.5523 6 19 6H1C0.447715 6 0 5.55228 0 5Z"/>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M8 2C7.73478 2 7.48043 2.10531 7.29289 2.29285C7.10536 2.48038 7 2.73478 7 3V4H13V3C13 2.73478 12.8946 2.48038 12.7071 2.29285C12.5196 2.10531 12.2652 2 12 2H8ZM15 4V3C15 2.20435 14.6839 1.44127 14.1213 0.878662C13.5587 0.316053 12.7956 0 12 0H8C7.20435 0 6.44129 0.316053 5.87868 0.878662C5.31607 1.44127 5 2.20435 5 3V4H3C2.44772 4 2 4.44772 2 5V19C2 19.7957 2.31607 20.5587 2.87868 21.1213C3.44129 21.6839 4.20435 22 5 22H15C15.7957 22 16.5587 21.6839 17.1213 21.1213C17.6839 20.5587 18 19.7957 18 19V5C18 4.44772 17.5523 4 17 4H15ZM4 6V19C4 19.2652 4.10536 19.5196 4.29289 19.7072C4.48043 19.8947 4.73478 20 5 20H15C15.2652 20 15.5196 19.8947 15.7071 19.7072C15.8946 19.5196 16 19.2652 16 19V6H4Z"/>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M8 9C8.55228 9 9 9.44771 9 10V16C9 16.5523 8.55228 17 8 17C7.44772 17 7 16.5523 7 16V10C7 9.44771 7.44772 9 8 9Z"/>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12 9C12.5523 9 13 9.44771 13 10V16C13 16.5523 12.5523 17 12 17C11.4477 17 11 16.5523 11 16V10C11 9.44771 11.4477 9 12 9Z"/>
+        </symbol>
+    </svg>
 </div>
 <section class="top-bar">
     <div class="container">
@@ -471,508 +483,101 @@
         <ul class="breadcrumbs__wrapper">
             <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
             <span class="breadcrumbs__separator">/</span>
-            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Каталог товаров</a></li>
+            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link ">Корзина товаров</a></li>
             <span class="breadcrumbs__separator">/</span>
-            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link breadcrumbs__link_active">Кондиционеры</a>
+            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link breadcrumbs__link_active">Оформить
+                заказ</a>
             </li>
         </ul>
     </div>
 </section>
-<section class="category-sort">
+<section class="order">
     <div class="container">
-        <div class="row justify-content-between align-items-center">
-            <h1 class="title">Кондиционеры</h1>
-            <div class="d-flex align-items-center category-sort__form-wrapper">
-                <span class="category-sort__title">Сортировать по:</span>
-                <form action="" class="form category-sort__form">
-                    <select name="" id="category-sort" class="js-select form__select">
-                        <option value="Популярности">Популярности</option>
-                        <option value="Цене">Цене</option>
-                        <option value="Имени">Имени</option>
-                        <option value="Рейтингу">Рейтингу</option>
-                        <option value="Наличию">Наличию</option>
+        <h1 class="title">Оформить заказ</h1>
+        <form action="" class="form order__form">
+            <div class="order__title">1 Контактные данные</div>
+            <div class="row order__contacts">
+                <div class="col-xl-3"><input type="text" class="form__input order__input w-100" placeholder="Имя"></div>
+                <div class="col-xl-3"><input type="text" class="form__input order__input w-100" placeholder="Фамилия">
+                </div>
+            </div>
+            <div class="row order__contacts">
+                <div class="col-xl-3"><input type="tel" class="form__input order__input w-100" placeholder="Телефон">
+                </div>
+                <div class="col-xl-3"><input type="email" class="form__input order__input w-100" placeholder="e-mail">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="order__line"></div>
+                </div>
+            </div>
+            <div class="order__title">2 Доставка</div>
+            <div class="row order__delivery">
+                <div class="col-xl-3">
+                    <div class="order__delivery-change order__delivery-change_active">Доставка курьером</div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="order__delivery-change">Самовывоз</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-3">
+                    <select class="form__select order__select js-select w-100">
+                        <option value="Самара" selected>Самара</option>
+                        <option value="Тольятти">Тольятти</option>
+                        <option value="Саратов">Саратов</option>
                     </select>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="products-list">
-    <div class="container">
-        <div class="row">
-            <div class="product-list__item">
-                <div class="product" data-dot="<a href='#item1'>1</a>" data-hash="item1">
-                    <div class="product__img"><img src="./assets/img/product-01.png" alt=""></div>
-                    <div class="product__title">Очиститель воздуха
-                        Tion Бризер 3S
-                        Standart
-                    </div>
-                    <div class="product__description">
-                        компактная приточная вентиляция...
-                    </div>
-                    <div class="product__price">
-                        <div class="product__price_old">50 000</div>
-                        <div class="product__price_new">42 376 ₽</div>
-                    </div>
-                    <div class="product__btns">
-                        <button class="button button_buy">Купить</button>
-                        <button class="button button button_service button_filter"></button>
-                    </div>
-                    <div class="product__like "></div>
                 </div>
             </div>
-            <div class="product-list__item">
-                <div class="product" data-dot="<a href='#item1'>1</a>" data-hash="item1">
-                    <div class="product__img"><img src="./assets/img/product-01.png" alt=""></div>
-                    <div class="product__title">Очиститель воздуха
-                        Tion Бризер 3S
-                        Standart
-                    </div>
-                    <div class="product__description">
-                        компактная приточная вентиляция...
-                    </div>
-                    <div class="product__price">
-                        <div class="product__price_old">50 000</div>
-                        <div class="product__price_new">42 376 ₽</div>
-                    </div>
-                    <div class="product__btns">
-                        <button class="button button_buy">Купить</button>
-                        <button class="button button button_service button_filter"></button>
-                    </div>
-                    <div class="product__like "></div>
+            <div class="row">
+                <div class="col-xl-3"><input type="text" class="form__input order__input w-100 mt-3"
+                                             placeholder="Улица, дом, квартира"></div>
+            </div>
+            <span>Доставка курьером в пределах выбранного города</span>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="order__line"></div>
                 </div>
             </div>
-            <div class="product-list__item">
-                <div class="product" data-dot="<a href='#item1'>1</a>" data-hash="item1">
-                    <div class="product__img"><img src="./assets/img/product-01.png" alt=""></div>
-                    <div class="product__title">Очиститель воздуха
-                        Tion Бризер 3S
-                        Standart
+            <div class="order__title">3 Оплата</div>
+            <div class="row order__pay">
+                <div class="col-xl-6 order__pay-item">
+                    <input type="radio" class="radio order__radio" id="radio-01" checked name="order-radio"/>
+                    <label for="radio-01" class="order__pay-title">Оплата наличными</label>
+                    <div class="order__pay-subtitle">Курьер принемает только наличные, просьба подготовить без
+                        сдачи
                     </div>
-                    <div class="product__description">
-                        компактная приточная вентиляция...
+                </div>
+                <div class="col-xl-6 order__pay-item">
+                    <input type="radio" class="radio order__radio" id="radio-02" name="order-radio"/>
+                    <label  for="radio-02" class="order__pay-title">Банковская карта онлайн</label>
+                    <div class="order__pay-subtitle">Тут будет информация для данного пункта в одну строку или в две
+                        строки для примера
                     </div>
-                    <div class="product__price">
-                        <div class="product__price_old">50 000</div>
-                        <div class="product__price_new">42 376 ₽</div>
+                </div>
+                <div class="col-xl-6 order__pay-item">
+                    <input type="radio" class="radio order__radio" id="radio-03" name="order-radio"/>
+                    <label for="radio-03" class="order__pay-title">Безналичный расчет для юр. лиц</label>
+                    <div class="order__pay-subtitle">Тут будет информация для данного пункта в одну строку или в две
+                        строки для примера
                     </div>
-                    <div class="product__btns">
-                        <button class="button button_buy">Купить</button>
-                        <button class="button button button_service button_filter"></button>
+                </div>
+                <div class="col-xl-6 order__pay-item">
+                    <input type="radio" class="radio order__radio" id="radio-04" name="order-radio"/>
+                    <label for="radio-04" class="order__pay-title">Рассрочка</label>
+                    <div class="order__pay-subtitle">Тут будет информация для данного пункта в одну строку или в две
+                        строки для примера
                     </div>
-                    <div class="product__like "></div>
                 </div>
             </div>
-            <div class="product-list__item">
-                <div class="product" data-dot="<a href='#item1'>1</a>" data-hash="item1">
-                    <div class="product__img"><img src="./assets/img/product-01.png" alt=""></div>
-                    <div class="product__title">Очиститель воздуха
-                        Tion Бризер 3S
-                        Standart
-                    </div>
-                    <div class="product__description">
-                        компактная приточная вентиляция...
-                    </div>
-                    <div class="product__price">
-                        <div class="product__price_old">50 000</div>
-                        <div class="product__price_new">42 376 ₽</div>
-                    </div>
-                    <div class="product__btns">
-                        <button class="button button_buy">Купить</button>
-                        <button class="button button button_service button_filter"></button>
-                    </div>
-                    <div class="product__like "></div>
+              <div class="row">
+                <div class="col-xl-12">
+                    <div class="order__line"></div>
                 </div>
             </div>
-            <div class="product-list__item">
-                <div class="product" data-dot="<a href='#item1'>1</a>" data-hash="item1">
-                    <div class="product__img"><img src="./assets/img/product-01.png" alt=""></div>
-                    <div class="product__title">Очиститель воздуха
-                        Tion Бризер 3S
-                        Standart
-                    </div>
-                    <div class="product__description">
-                        компактная приточная вентиляция...
-                    </div>
-                    <div class="product__price">
-                        <div class="product__price_old">50 000</div>
-                        <div class="product__price_new">42 376 ₽</div>
-                    </div>
-                    <div class="product__btns">
-                        <button class="button button_buy">Купить</button>
-                        <button class="button button button_service button_filter"></button>
-                    </div>
-                    <div class="product__like "></div>
-                </div>
-            </div>
-            <div class="product-list__item">
-                <div class="product" data-dot="<a href='#item1'>1</a>" data-hash="item1">
-                    <div class="product__img"><img src="./assets/img/product-01.png" alt=""></div>
-                    <div class="product__title">Очиститель воздуха
-                        Tion Бризер 3S
-                        Standart
-                    </div>
-                    <div class="product__description">
-                        компактная приточная вентиляция...
-                    </div>
-                    <div class="product__price">
-                        <div class="product__price_old">50 000</div>
-                        <div class="product__price_new">42 376 ₽</div>
-                    </div>
-                    <div class="product__btns">
-                        <button class="button button_buy">Купить</button>
-                        <button class="button button button_service button_filter"></button>
-                    </div>
-                    <div class="product__like "></div>
-                </div>
-            </div>
-            <div class="product-list__item">
-                <div class="product" data-dot="<a href='#item1'>1</a>" data-hash="item1">
-                    <div class="product__img"><img src="./assets/img/product-01.png" alt=""></div>
-                    <div class="product__title">Очиститель воздуха
-                        Tion Бризер 3S
-                        Standart
-                    </div>
-                    <div class="product__description">
-                        компактная приточная вентиляция...
-                    </div>
-                    <div class="product__price">
-                        <div class="product__price_old">50 000</div>
-                        <div class="product__price_new">42 376 ₽</div>
-                    </div>
-                    <div class="product__btns">
-                        <button class="button button_buy">Купить</button>
-                        <button class="button button button_service button_filter"></button>
-                    </div>
-                    <div class="product__like "></div>
-                </div>
-            </div>
-            <div class="product-list__item">
-                <div class="product" data-dot="<a href='#item1'>1</a>" data-hash="item1">
-                    <div class="product__img"><img src="./assets/img/product-01.png" alt=""></div>
-                    <div class="product__title">Очиститель воздуха
-                        Tion Бризер 3S
-                        Standart
-                    </div>
-                    <div class="product__description">
-                        компактная приточная вентиляция...
-                    </div>
-                    <div class="product__price">
-                        <div class="product__price_old">50 000</div>
-                        <div class="product__price_new">42 376 ₽</div>
-                    </div>
-                    <div class="product__btns">
-                        <button class="button button_buy">Купить</button>
-                        <button class="button button button_service button_filter"></button>
-                    </div>
-                    <div class="product__like "></div>
-                </div>
-            </div>
-            <div class="product-list__item">
-                <div class="product" data-dot="<a href='#item1'>1</a>" data-hash="item1">
-                    <div class="product__img"><img src="./assets/img/product-01.png" alt=""></div>
-                    <div class="product__title">Очиститель воздуха
-                        Tion Бризер 3S
-                        Standart
-                    </div>
-                    <div class="product__description">
-                        компактная приточная вентиляция...
-                    </div>
-                    <div class="product__price">
-                        <div class="product__price_old">50 000</div>
-                        <div class="product__price_new">42 376 ₽</div>
-                    </div>
-                    <div class="product__btns">
-                        <button class="button button_buy">Купить</button>
-                        <button class="button button button_service button_filter"></button>
-                    </div>
-                    <div class="product__like "></div>
-                </div>
-            </div>
-            <div class="product-list__item">
-                <div class="product" data-dot="<a href='#item1'>1</a>" data-hash="item1">
-                    <div class="product__img"><img src="./assets/img/product-01.png" alt=""></div>
-                    <div class="product__title">Очиститель воздуха
-                        Tion Бризер 3S
-                        Standart
-                    </div>
-                    <div class="product__description">
-                        компактная приточная вентиляция...
-                    </div>
-                    <div class="product__price">
-                        <div class="product__price_old">50 000</div>
-                        <div class="product__price_new">42 376 ₽</div>
-                    </div>
-                    <div class="product__btns">
-                        <button class="button button_buy">Купить</button>
-                        <button class="button button button_service button_filter"></button>
-                    </div>
-                    <div class="product__like "></div>
-                </div>
-            </div>
-            <div class="product-list__item">
-                <div class="product" data-dot="<a href='#item1'>1</a>" data-hash="item1">
-                    <div class="product__img"><img src="./assets/img/product-01.png" alt=""></div>
-                    <div class="product__title">Очиститель воздуха
-                        Tion Бризер 3S
-                        Standart
-                    </div>
-                    <div class="product__description">
-                        компактная приточная вентиляция...
-                    </div>
-                    <div class="product__price">
-                        <div class="product__price_old">50 000</div>
-                        <div class="product__price_new">42 376 ₽</div>
-                    </div>
-                    <div class="product__btns">
-                        <button class="button button_buy">Купить</button>
-                        <button class="button button button_service button_filter"></button>
-                    </div>
-                    <div class="product__like "></div>
-                </div>
-            </div>
-            <div class="product-list__item">
-                <div class="product" data-dot="<a href='#item1'>1</a>" data-hash="item1">
-                    <div class="product__img"><img src="./assets/img/product-01.png" alt=""></div>
-                    <div class="product__title">Очиститель воздуха
-                        Tion Бризер 3S
-                        Standart
-                    </div>
-                    <div class="product__description">
-                        компактная приточная вентиляция...
-                    </div>
-                    <div class="product__price">
-                        <div class="product__price_old">50 000</div>
-                        <div class="product__price_new">42 376 ₽</div>
-                    </div>
-                    <div class="product__btns">
-                        <button class="button button_buy">Купить</button>
-                        <button class="button button button_service button_filter"></button>
-                    </div>
-                    <div class="product__like "></div>
-                </div>
-            </div>
-            <div class="product-list__item">
-                <div class="product" data-dot="<a href='#item1'>1</a>" data-hash="item1">
-                    <div class="product__img"><img src="./assets/img/product-01.png" alt=""></div>
-                    <div class="product__title">Очиститель воздуха
-                        Tion Бризер 3S
-                        Standart
-                    </div>
-                    <div class="product__description">
-                        компактная приточная вентиляция...
-                    </div>
-                    <div class="product__price">
-                        <div class="product__price_old">50 000</div>
-                        <div class="product__price_new">42 376 ₽</div>
-                    </div>
-                    <div class="product__btns">
-                        <button class="button button_buy">Купить</button>
-                        <button class="button button button_service button_filter"></button>
-                    </div>
-                    <div class="product__like "></div>
-                </div>
-            </div>
-            <div class="product-list__item">
-                <div class="product" data-dot="<a href='#item1'>1</a>" data-hash="item1">
-                    <div class="product__img"><img src="./assets/img/product-01.png" alt=""></div>
-                    <div class="product__title">Очиститель воздуха
-                        Tion Бризер 3S
-                        Standart
-                    </div>
-                    <div class="product__description">
-                        компактная приточная вентиляция...
-                    </div>
-                    <div class="product__price">
-                        <div class="product__price_old">50 000</div>
-                        <div class="product__price_new">42 376 ₽</div>
-                    </div>
-                    <div class="product__btns">
-                        <button class="button button_buy">Купить</button>
-                        <button class="button button button_service button_filter"></button>
-                    </div>
-                    <div class="product__like "></div>
-                </div>
-            </div>
-            <div class="product-list__item">
-                <div class="product" data-dot="<a href='#item1'>1</a>" data-hash="item1">
-                    <div class="product__img"><img src="./assets/img/product-01.png" alt=""></div>
-                    <div class="product__title">Очиститель воздуха
-                        Tion Бризер 3S
-                        Standart
-                    </div>
-                    <div class="product__description">
-                        компактная приточная вентиляция...
-                    </div>
-                    <div class="product__price">
-                        <div class="product__price_old">50 000</div>
-                        <div class="product__price_new">42 376 ₽</div>
-                    </div>
-                    <div class="product__btns">
-                        <button class="button button_buy">Купить</button>
-                        <button class="button button button_service button_filter"></button>
-                    </div>
-                    <div class="product__like "></div>
-                </div>
-            </div>
-            <div class="product-list__item">
-                <div class="product" data-dot="<a href='#item1'>1</a>" data-hash="item1">
-                    <div class="product__img"><img src="./assets/img/product-01.png" alt=""></div>
-                    <div class="product__title">Очиститель воздуха
-                        Tion Бризер 3S
-                        Standart
-                    </div>
-                    <div class="product__description">
-                        компактная приточная вентиляция...
-                    </div>
-                    <div class="product__price">
-                        <div class="product__price_old">50 000</div>
-                        <div class="product__price_new">42 376 ₽</div>
-                    </div>
-                    <div class="product__btns">
-                        <button class="button button_buy">Купить</button>
-                        <button class="button button button_service button_filter"></button>
-                    </div>
-                    <div class="product__like "></div>
-                </div>
-            </div>
-            <div class="product-list__item">
-                <div class="product" data-dot="<a href='#item1'>1</a>" data-hash="item1">
-                    <div class="product__img"><img src="./assets/img/product-01.png" alt=""></div>
-                    <div class="product__title">Очиститель воздуха
-                        Tion Бризер 3S
-                        Standart
-                    </div>
-                    <div class="product__description">
-                        компактная приточная вентиляция...
-                    </div>
-                    <div class="product__price">
-                        <div class="product__price_old">50 000</div>
-                        <div class="product__price_new">42 376 ₽</div>
-                    </div>
-                    <div class="product__btns">
-                        <button class="button button_buy">Купить</button>
-                        <button class="button button button_service button_filter"></button>
-                    </div>
-                    <div class="product__like "></div>
-                </div>
-            </div>
-            <div class="product-list__item">
-                <div class="product" data-dot="<a href='#item1'>1</a>" data-hash="item1">
-                    <div class="product__img"><img src="./assets/img/product-01.png" alt=""></div>
-                    <div class="product__title">Очиститель воздуха
-                        Tion Бризер 3S
-                        Standart
-                    </div>
-                    <div class="product__description">
-                        компактная приточная вентиляция...
-                    </div>
-                    <div class="product__price">
-                        <div class="product__price_old">50 000</div>
-                        <div class="product__price_new">42 376 ₽</div>
-                    </div>
-                    <div class="product__btns">
-                        <button class="button button_buy">Купить</button>
-                        <button class="button button button_service button_filter"></button>
-                    </div>
-                    <div class="product__like "></div>
-                </div>
-            </div>
-            <button class="button button_yellow product-list__btn">Показать еще</button>
-        </div>
-    </div>
-</section>
-<section class="recommended">
-    <div class="container">
-        <div class="title">Рекомендуем</div>
-        <div class="row">
-            <div class="product__list js-recommended-slider owl-carousel owl-theme">
-                <!--Item-->
-                <div class="product" data-dot="<a href='#item1'>1</a>" data-hash="item1">
-                    <div class="product__img"><img src="./assets/img/product-01.png" alt=""></div>
-                    <div class="product__title">Очиститель воздуха
-                        Tion Бризер 3S
-                        Standart
-                    </div>
-                    <div class="product__description">
-                        компактная приточная вентиляция...
-                    </div>
-                    <div class="product__price">
-                        <div class="product__price_old">50 000</div>
-                        <div class="product__price_new">42 376 ₽</div>
-                    </div>
-                    <div class="product__btns">
-                        <button class="button button_buy">Купить</button>
-                        <button class="button button button_service button_filter"></button>
-                    </div>
-                    <div class="product__like "></div>
-                </div>
-                <!--Item End-->
-                <!--Item-->
-                <div class="product" data-dot="<a href='#item2'>2</a>" data-hash="item2">
-                    <div class="product__img"><img src="./assets/img/product-01.png" alt=""></div>
-                    <div class="product__title">Очиститель воздуха
-                        Tion Бризер 3S
-                        Standart
-                    </div>
-                    <div class="product__description">
-                        компактная приточная вентиляция...
-                    </div>
-                    <div class="product__price">
-                        <!-- <div class="product__price_old">50 000</div>-->
-                        <div class="product__price_new">42 376 ₽</div>
-                    </div>
-                    <div class="product__btns">
-                        <button class="button button_buy">Купить</button>
-                        <button class="button button button_service button_filter"></button>
-                    </div>
-                    <div class="product__like "></div>
-                </div>
-                <!--Item End-->
-                <!--Item-->
-                <div class="product" data-dot="<a href='#item3'>3</a>" data-hash="item3">
-                    <div class="product__img"><img src="./assets/img/product-01.png" alt=""></div>
-                    <div class="product__title">Очиститель воздуха
-                        Tion Бризер 3S
-                        Standart
-                    </div>
-                    <div class="product__description">
-                        компактная приточная вентиляция...
-                    </div>
-                    <div class="product__price">
-                        <div class="product__price_old">50 000</div>
-                        <div class="product__price_new">42 376 ₽</div>
-                    </div>
-                    <div class="product__btns">
-                        <button class="button button_buy">Купить</button>
-                        <button class="button button button_service button_filter"></button>
-                    </div>
-                    <div class="product__like product__like_active"></div>
-                </div>
-                <!--Item End-->
-                <!--Item-->
-                <div class="product" data-dot="<a href='#item4'>4</a>" data-hash="item4">
-                    <div class="product__img"><img src="./assets/img/product-01.png" alt=""></div>
-                    <div class="product__title">Очиститель воздуха
-                        Tion Бризер 3S
-                        Standart
-                    </div>
-                    <div class="product__description">
-                        компактная приточная вентиляция...
-                    </div>
-                    <div class="product__price">
-                        <!-- <div class="product__price_old">50 000</div>-->
-                        <div class="product__price_new">42 376 ₽</div>
-                    </div>
-                    <div class="product__btns">
-                        <button class="button button_buy">Купить</button>
-                        <button class="button button button_service button_filter"></button>
-                    </div>
-                    <div class="product__like "></div>
-                </div>
-                <!--Item End-->
-            </div>
-        </div>
+            <div class="order__title">4 Информация о заказе</div>
+        </form>
     </div>
 </section>
 <section class="subscribe subscribe__wrapper">
@@ -985,7 +590,8 @@
                     <form action="" class="subscribe__form form d-flex">
                         <input class="form__input subscribe__input" type="email" placeholder="Введите e-mail"
                                required>
-                        <button type="submit" class="button button_yellow button_email subscribe__btn">Подписаться</button>
+                        <button type="submit" class="button button_yellow button_email subscribe__btn">Подписаться
+                        </button>
                     </form>
                 </div>
             </div>
@@ -1125,5 +731,5 @@
         </div>
     </div>
 </div>
-<script src="assets/js/vendors.66345eff5ee062c7f602.js"></script><script src="assets/js/app.62ad05035828164bc0c6.js"></script></body>
+</body>
 </html>
