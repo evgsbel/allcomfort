@@ -1335,6 +1335,8 @@ p
     border-radius: 5px
     height: 40px
     margin-bottom: 20px
+  &__textarea
+    height: 95px
   &__line
     height: 1px
     background-color: #C4C4C4
@@ -1364,6 +1366,65 @@ p
       margin-top: 15px
   &__radio:checked + label
       color: #000
+  &__info
+    justify-content: space-between
+    &-item
+      justify-content: space-between
+      margin-bottom: 50px
+      font-family: $medium, serif
+      font-size: 20px
+    &-service
+      &_light
+        font-family: $light, serif
+
+
+// modal cart
+.modal-cart
+  display: none
+  width: 1052px
+  max-width: 100%
+  padding: 0
+  border-radius: 5px
+  &__title
+    width: 100%
+    background-color: #F5F5F5
+    font-family: $medium, Serif
+    font-size: 35px
+    height: 77px
+    display: flex
+    align-items: center
+    padding-left: 40px
+  &__body
+    padding-top: 25px
+  &__titles
+    margin: 0 25px
+  &__wrapper
+    border: 1px solid #C4C4C4
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+    border-radius: 5px
+    margin: 20px 25px
+  &__result
+    margin-right: 25px
+    &-btn
+      border: 1px solid #2A2A2A
+      margin-left: 20px
+      &_resume
+        width: 192px
+  &__close
+    right: 0
+    margin-right: 40px
+    display: flex
+    align-items: center
+    top: 20px
+    font-family: $medium, serif
+    font-size: 18px
+    position: absolute
+    border: 0
+    background-color: transparent
+    svg
+      margin-left: 15px
+
 
 
 
