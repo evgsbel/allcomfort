@@ -205,6 +205,10 @@ $('[data-fancybox]').fancybox({
     }
 });
 
+$('#collapseExample').on('hidden.bs.collapse', function () {
+  this.scrollIntoView();
+});
+
 // tabs
 const tabs = document.querySelector(".tabs");
 const tabsBtns = tabs.querySelectorAll(".tabs__btn");

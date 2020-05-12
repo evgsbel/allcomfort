@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -366,6 +367,17 @@
         </div>
     </div>
 </section>
+<div class="mobile-top mobile-top__nav">
+    <ul class="mobile-top__nav-wrapper">
+        <li class="mobile-top__nav-item"><a href="" class="mobile-top__nav-link">адрес
+            магазинов </a></li>
+        <li class="mobile-top__nav-item"><a href="" class="mobile-top__nav-link">доставка</a></li>
+        <li class="mobile-top__nav-item"><a href="" class="mobile-top__nav-link">статус заказа </a>
+        </li>
+        <li class="mobile-top__nav-item"><a href="" class="mobile-top__nav-link">кредит и
+            рассрочка</a></li>
+    </ul>
+</div>
 <header class="header">
     <div class="container h-100">
         <div class="row h-100 align-items-center justify-content-between m-0">
@@ -409,17 +421,6 @@
                                placeholder="Наименования продукции или артикул...">
                         <input type="submit" class="search__submit" value="">
                     </form>
-                </div>
-                <div class="mobile-menu__nav">
-                    <ul class="mobile-menu__nav-wrapper">
-                        <li class="mobile-menu__nav-item"><a href="adasd" class="mobile-menu__nav-link">адрес
-                            магазинов </a></li>
-                        <li class="mobile-menu__nav-item"><a href="" class="mobile-menu__nav-link">доставка</a></li>
-                        <li class="mobile-menu__nav-item"><a href="" class="mobile-menu__nav-link">статус заказа </a>
-                        </li>
-                        <li class="mobile-menu__nav-item"><a href="" class="mobile-menu__nav-link">кредит и
-                            рассрочка</a></li>
-                    </ul>
                 </div>
                 <div class="mobile-menu__nav">
                     <ul class="mobile-menu__nav-wrapper">
@@ -481,18 +482,20 @@
 <section class="category-sort">
     <div class="container">
         <div class="row justify-content-between align-items-center">
-            <h1 class="title">Кондиционеры</h1>
-            <div class="d-flex align-items-center category-sort__form-wrapper">
-                <span class="category-sort__title">Сортировать по:</span>
-                <form action="" class="form category-sort__form">
-                    <select name="" id="category-sort" class="js-select form__select">
-                        <option value="Популярности">Популярности</option>
-                        <option value="Цене">Цене</option>
-                        <option value="Имени">Имени</option>
-                        <option value="Рейтингу">Рейтингу</option>
-                        <option value="Наличию">Наличию</option>
-                    </select>
-                </form>
+            <div class="col-xl-12">
+                <h1 class="title">Кондиционеры</h1>
+                <div class="d-flex align-items-center category-sort__form-wrapper">
+                    <span class="category-sort__title">Сортировать по:</span>
+                    <form action="" class="form category-sort__form">
+                        <select name="" id="category-sort" class="js-select form__select">
+                            <option value="Популярности">Популярности</option>
+                            <option value="Цене">Цене</option>
+                            <option value="Имени">Имени</option>
+                            <option value="Рейтингу">Рейтингу</option>
+                            <option value="Наличию">Наличию</option>
+                        </select>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -979,13 +982,14 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <div class=" d-flex align-items-center justify-content-center">
+                <div class=" d-flex align-items-center subscribe__content">
                     <div class="subscribe__title">Получайте самые интересные <br>предложения первыми</div>
                     <div class="subscribe__line"></div>
                     <form action="" class="subscribe__form form d-flex">
                         <input class="form__input subscribe__input" type="email" placeholder="Введите e-mail"
                                required>
-                        <button type="submit" class="button button_yellow button_email subscribe__btn">Подписаться</button>
+                        <button type="submit" class="button button_yellow button_email subscribe__btn">Подписаться
+                        </button>
                     </form>
                 </div>
             </div>

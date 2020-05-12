@@ -678,6 +678,9 @@ p
     padding: 30px 0
     -webkit-background-size: cover
     background-size: cover
+  &__content
+    flex-wrap: wrap
+    justify-content: center
   &__title
     color: #fff
     font-size: 35px
@@ -843,6 +846,16 @@ p
     margin: 0 10px
     font-size: 20px
     font-family: $light, serif
+.mobile-top
+  display: none
+  &__nav-wrapper
+    padding: 15px
+    justify-content: space-between
+    text-align: center
+    align-items: center
+    display: flex
+  &__nav-item
+    width: 25%
 
 
 
@@ -881,7 +894,12 @@ p
     font-size: 15px
     font-family: $light, serif
     margin-right: 15px
-
+.mobile-catalog
+  &__wrapper:not(.show)
+    display: flex
+    height: 100%
+  &__btn
+    display: none
 .product-list
   &__item
     width: 216px
@@ -895,9 +913,11 @@ p
 
 .recommended
   background-color: #fff
-  padding-top: 50px
-  padding-bottom: 70px
+  padding: 20px 0 50px
 
+  .owl-carousel .owl-item img
+    width: auto
+    margin: 0 auto
 //delivery page
 
 .delivery-form
