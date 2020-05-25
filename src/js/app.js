@@ -209,10 +209,10 @@ $('#collapseExample').on('hidden.bs.collapse', function () {
   this.scrollIntoView();
 });
 
-// tabs
+//tabs
 const tabs = document.querySelector(".tabs");
-const tabsBtns = tabs.querySelectorAll(".tabs__btn");
-const tabsContents = tabs.querySelectorAll(".tabs__content");
+const tabsBtn = document.querySelectorAll(".tabs__btn");
+const tabsContents = document.querySelectorAll(".tabs__content");
 
 function displayCurrentTab(current) {
     for (let i = 0; i < tabsContents.length; i++) {
@@ -221,21 +221,23 @@ function displayCurrentTab(current) {
 }
 
 displayCurrentTab(0);
-
-
-tabs.addEventListener("click", event => {
-    for (let i = 0; i < tabsBtns.length; i++) {
-        tabsBtns[i].classList.remove("is-active");
-    }
-    if (event.target.className === "tabs__btn") {
-        for (let i = 0; i < tabsBtns.length; i++) {
-            if (event.target === tabsBtns[i]) {
-
-                displayCurrentTab(i);
-                event.target.classList.add('is-active');
-                break;
+if (null !== tabs) {
+    tabs.addEventListener("click", event => {
+        if (event.target.className === "tabs__btn") {
+            for (let i = 0; i < tabsBtn.length; i++) {
+                tabsBtn[i].classList.remove("is-active");
             }
         }
-    }
-});
+        if (event.target.className === "tabs__btn") {
+            for (let i = 0; i < tabsBtn.length; i++) {
+                if (event.target === tabsBtn[i]) {
+
+                    displayCurrentTab(i);
+                    event.target.classList.add('is-active');
+                    break;
+                }
+            }
+        }
+    });
+}
 

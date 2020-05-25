@@ -1,12 +1,14 @@
-/* Base config:
-   ========================================================================== */
-const webpack = require('webpack');
-const path = require("path");
-const fs = require("fs");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const webpack = require('webpack')
+const path = require('path')
+const fs = require("fs")
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const autoprefixer = require('autoprefixer')
+const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin')
+const TerserWebpackPlugin = require('terser-webpack-plugin')
+const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
 
 // Main const. Feel free to change it
 const PATHS = {
@@ -22,20 +24,11 @@ const PAGES = fs
     .readdirSync(PAGES_DIR)
     .filter(fileName => fileName.endsWith(".html"));
 
-module.exports = {
-    externals: {
-        paths: PATHS
-    },
-    entry: {
-        app: PATHS.src
-        // module: `${PATHS.src}/your-module.js`,
-    },
-    output: {
-        filename: `${PATHS.assets}js/[name].[contenthash].js`,
-        path: PATHS.dist,
-        //publicPath: "./"
-    },
-    optimization: {
+const isDev = process.env.NODE_ENV === 'development'
+const isProd = !isDev
+
+const optimization = () => {
+    const config = {
         splitChunks: {
             cacheGroups: {
                 vendor: {
@@ -46,102 +39,55 @@ module.exports = {
                 }
             }
         }
-    },
-    module: {
-        rules: [
-            {
-                // JavaScript
-                test: /\.js$/,
-                loader: "babel-loader",
-                exclude: "/node_modules/"
-            },
-            {
-                // Fonts
-                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-                loader: "file-loader",
-                options: {
-                    name: "../fonts/[name].[ext]"
-                }
-            },
-            {
-                // images / icons
-                test: /\.(png|jpg|gif|svg)$/,
-                loader: "file-loader",
-                options: {
-                    name: "../img/[name].[ext]"
-                }
-            },
-            {
-                // scss
-                test: /\.s[ac]ss$/,
-                use: [
-                    "style-loader",
-                    MiniCssExtractPlugin.loader,
-                    {
-                        loader: "css-loader",
-                        options: {sourceMap: true}
-                    },
-                    {
-                        loader: "postcss-loader",
-                        options: {
-                            sourceMap: true,
-                            config: {path: `./postcss.config.js`}
-                        }
-                    },
-                    {
-                        loader: "sass-loader",
-                        options: {sourceMap: true}
-                    }
-                ]
-            },
-            {
-                // css
-                test: /\.css$/,
-                use: [
-                    "style-loader",
-                    MiniCssExtractPlugin.loader,
-                    {
-                        loader: "css-loader",
-                        options: {sourceMap: true}
-                    },
-                    {
-                        loader: "postcss-loader",
-                        options: {
-                            sourceMap: true,
-                            config: {path: `./postcss.config.js`}
-                        }
-                    }
-                ]
-            },
-            //svg
-            {
-                test: /\.svg$/,
-                use: [
-                    'svg-sprite-loader',
-                    'svgo-loader'
-                ]
-            }
+    }
+
+    if (isProd) {
+        config.minimizer = [
+            new OptimizeCssAssetsWebpackPlugin(),
+            new TerserWebpackPlugin()
         ]
-    },
-    resolve: {
-        alias: {
-            "~": PATHS.src,
-        }
-    },
-    plugins: [
-        new MiniCssExtractPlugin({
-            filename: `${PATHS.assets}css/[name].[contenthash].css`
-        }),
-        new webpack.ProvidePlugin({
-            $: 'jquery',
-            jQuery: 'jquery',
-            'window.jQuery': 'jquery'
-        }),
-        new CopyWebpackPlugin([
-            {from: `${PATHS.src}/${PATHS.assets}img`, to: `${PATHS.assets}img`},
-            {from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts`},
-            {from: `${PATHS.src}/static`, to: ""}
-        ]),
+    }
+
+    return config
+}
+
+const cssLoaders = extra => {
+    const loaders = [
+        {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+                hmr: isDev
+            },
+
+        },
+        'css-loader',
+        'postcss-loader'
+    ]
+    if (extra) {
+        loaders.push(extra)
+    }
+    return loaders
+}
+
+const babelOptions = preset => {
+    const opts = {
+        presets: [
+            '@babel/preset-env',
+        ],
+        plugins: [
+            '@babel/plugin-proposal-class-properties'
+        ]
+    }
+    if (preset) {
+        opts.presets.push(preset)
+    }
+
+    return opts
+}
+
+const plugins = () => {
+    const base = [
+
         new CleanWebpackPlugin(),
         /*
           Automatic creation any html pages (Don't forget to RERUN dev server!)
@@ -156,6 +102,100 @@ module.exports = {
                     template: `${PAGES_DIR}/${page}`,
                     filename: `./${page}`
                 })
-        )
+        ),
+
+        new CopyWebpackPlugin([
+            {
+                from: path.resolve(__dirname, 'src/favicon.ico'),
+                to: path.resolve(__dirname, 'dist'),
+            },
+            {from: `${PATHS.src}/${PATHS.assets}img`, to: `${PATHS.assets}img`},
+            {from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts`},
+        ]),
+        new MiniCssExtractPlugin({
+            filename: `${PATHS.assets}css/[name].[hash].css`
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
+        }),
+        new webpack.LoaderOptionsPlugin({
+            options: {
+                postcss: [
+                    autoprefixer()
+                ]
+            }
+        }),
     ]
-};
+    if (isProd) {
+        base.push(new BundleAnalyzerPlugin())
+    }
+    return base
+}
+
+module.exports = {
+    //context: path.resolve(__dirname, 'src'),
+    mode: 'development',
+    externals: {
+        paths: PATHS
+    },
+    entry: {
+        app: PATHS.src
+    },
+    output: {
+        filename: `${PATHS.assets}js/[name].[hash].js`,
+        path: PATHS.dist,
+        //publicPath: "./"
+    },
+    optimization: optimization(),
+    devServer: {
+        port: 8080,
+    },
+    devtool: isDev ? 'source-map' : '',
+    plugins: plugins(),
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: cssLoaders(),
+            },
+            {
+                test: /\.s[ac]ss$/,
+                use: cssLoaders('sass-loader')
+            },
+            {
+                test: /\.(png|jpg|svg|gif)$/,
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: `${PATHS.assets}img`,
+                        publicPath: '../img'
+                    },
+                }]
+            },
+            {
+               test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: `${PATHS.assets}fonts`,
+                        publicPath: '../fonts'
+                    },
+                }]
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: [{
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env'],
+                    },
+                }],
+            }
+        ]
+    }
+}
