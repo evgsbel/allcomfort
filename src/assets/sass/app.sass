@@ -21,8 +21,6 @@ body
   font-family: $regular, serif
   background-color: #F5F5F5
   line-height: 1
-img
-  max-width: 100%
 b
   font-family: $bold, serif
 ul
@@ -110,7 +108,7 @@ button
   display: none
 .select2-container--open .select2-dropdown--below
   margin-top: 5px
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
   border-radius: 5px
   border: 0
   padding: 20px 0 25px
@@ -198,7 +196,7 @@ button
     box-shadow: 0 2px 2px rgba(81, 75, 0, 0.15)
   &_yellow
     background-color: $yellow
-    box-shadow: 0px 2px 2px rgba(81, 75, 0, 0.15)
+    box-shadow: 0 2px 2px rgba(81, 75, 0, 0.15)
   &_white
     border: 1px solid #fff
     color: #fff
@@ -315,7 +313,7 @@ button
       font-size: 15px
     &.active a, &:hover a
       background-color: #fff
-      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1)
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1)
       text-decoration: none
       font-family: $bold
 
@@ -543,7 +541,7 @@ p
   flex-direction: column
   justify-content: space-between
   &:hover
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.08)
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.08)
   &__title
     margin: 20px 0
     font-family: $medium
@@ -820,7 +818,7 @@ p
   &__nav
     background-color: #fff
     margin: 10px 0
-    box-shadow: 0px 2px 2px rgba(81, 75, 0, 0.15)
+    box-shadow: 0 2px 2px rgba(81, 75, 0, 0.15)
     padding: 25px 0 10px
   &__nav-item
     margin-bottom: 20px
@@ -883,6 +881,7 @@ p
       background-color: $yellow
       text-decoration: none
   &__img
+    max-width: 100%
   &__name
     font-size: 20px
 
@@ -919,10 +918,11 @@ p
 .recommended
   background-color: #fff
   padding: 20px 0 50px
-
   .owl-carousel .owl-item img
     width: auto
     margin: 0 auto
+  &.main-recommended
+    background-color: transparent
 //delivery page
 
 .delivery-form
@@ -1308,7 +1308,7 @@ p
         fill: #F44D43
   &__info
     background-color: #fff
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
     border-radius: 5px
     padding: 20px 20px 20px 23px
     font-family: $medium, serif
@@ -1449,9 +1449,69 @@ p
     background-color: transparent
     svg
       margin-left: 15px
-
-
-
+//credits
+.credits
+  &__subtitle
+    font-family: $medium, Serif
+    font-size: 30px
+    margin-bottom: 2em
+  &__adv
+    margin-bottom: 60px
+    &_ttl
+      background-color: $yellow
+      font-size: 25px
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 138px
+      height: 49px
+      max-width: 100%
+      margin: 0 auto 20px
+      font-family: $bold, serif
+    &_text
+      font-family: $light, serif
+      text-align: center
+      line-height: 22px
+  &__how
+    padding-top: 50px
+    padding-bottom: 50px
+    &_item
+      border: 1px solid #C4C4C4
+      padding: 20px 30px
+      height: 100%
+      transition: .3s all ease-in-out
+      &:hover, &.is-active
+        background-color: $yellow
+        color: $black
+    &_number
+      display: flex
+      align-items: baseline
+      margin-bottom: 15px
+      &_big
+        font-size: 50px
+        font-family: $medium, serif
+        display: flex
+        align-items: center
+        &:after
+          content: ''
+          display: block
+          background-image: url("data:image/svg+xml,%3Csvg width='18' height='60' viewBox='0 0 18 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.6205 1L1 59.5762' stroke='%232A2A2A'/%3E%3C/svg%3E%0A")
+          background-repeat: no-repeat
+          width: 18px
+          height: 60px
+          margin: 0 10px
+      &_small
+        font-size: 20px
+        font-family: $light, serif
+    &_text
+      font-family: $light, Serif
+      line-height: 22px
+  &__banks
+    padding-bottom: 30px
+    &_item
+      display: flex
+      justify-content: center
+      align-items: center
 
 
 
