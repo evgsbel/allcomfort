@@ -1,0 +1,8 @@
+export default {
+      id: "strwhite-usage",
+      viewBox: "0 0 10 9",
+      url: __webpack_public_path__ + "/home/rooney/pageProofs/allcomfort/src/assets/img/svg/strwhite.svg",
+      toString: function () {
+        return this.url;
+      }
+    }

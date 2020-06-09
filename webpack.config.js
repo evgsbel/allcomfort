@@ -9,6 +9,7 @@ const autoprefixer = require('autoprefixer')
 const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin')
 const TerserWebpackPlugin = require('terser-webpack-plugin')
 const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
+const SpriteLoaderPlugin = require('svg-sprite-loader/plugin')
 
 // Main const. Feel free to change it
 const PATHS = {
@@ -127,6 +128,9 @@ const plugins = () => {
                 ]
             }
         }),
+        new SpriteLoaderPlugin({
+            plainSprite: true
+        }),
     ]
     if (isProd) {
         base.push(new BundleAnalyzerPlugin())
@@ -195,6 +199,14 @@ module.exports = {
                         presets: ['@babel/preset-env'],
                     },
                 }],
+            },
+            {
+                test: /\.svg$/, // your icons directory
+                loader: 'svg-sprite-loader',
+                options: {
+                    extract: true,
+                    spriteFilename: `${PATHS.assets}img/svg` + '/sprite.svg', // this is the destination of your sprite sheet
+                }
             }
         ]
     }

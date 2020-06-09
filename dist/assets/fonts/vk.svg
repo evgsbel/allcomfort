@@ -1,0 +1,8 @@
+export default {
+      id: "vk-usage",
+      viewBox: "0 0 20 12",
+      url: __webpack_public_path__ + "/home/rooney/pageProofs/allcomfort/src/assets/img/svg/vk.svg",
+      toString: function () {
+        return this.url;
+      }
+    }

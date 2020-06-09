@@ -1,0 +1,8 @@
+export default {
+      id: "buy-usage",
+      viewBox: "0 0 14 14",
+      url: __webpack_public_path__ + "/home/rooney/pageProofs/allcomfort/src/assets/img/svg/buy.svg",
+      toString: function () {
+        return this.url;
+      }
+    }
