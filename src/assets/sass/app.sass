@@ -910,8 +910,6 @@ p
   &__item
     width: 216px
     margin-bottom: 20px
-    &:not(:nth-child(6n))
-      margin-right: 20px
   &__btn
     margin: 20px auto 60px
     border: 0
@@ -1526,6 +1524,24 @@ p
     margin: 10px 0
     display: block
 
-
-
+// filter
+.filter
+  margin-bottom: 60px
+  &__item
+    &:not(:last-child)
+      margin-right: 20px
+    &_ttl
+      color: $black
+      font-size: 15px
+      font-family: $light, serif
+      margin-bottom: 1em
+    &_sort
+      margin-left: auto
+  &__input
+    height: 40px
+    width: 133px
+    &::-webkit-input-placeholder
+      color: #ADADAD
+    &:not(:last-child)
+      margin-right: 10px
 
